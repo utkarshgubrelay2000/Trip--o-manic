@@ -1,0 +1,12 @@
+.navItems{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font:bolder;
+    float: right;
+    margin: 8px;
+    box-shadow: 6px 0px 2px black;
+    border: chocolate 2px solid;
+    padding: 5px;
+    margin-right: 20px;
+    height: 40%;
+    text-align: center;
+}

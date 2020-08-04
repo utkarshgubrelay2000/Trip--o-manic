@@ -1,0 +1,10 @@
+.header{
+    background-color: sienna;
+    width: 100%;
+    height: 8vh;
+    margin: 3px;
+    box-shadow: sienna 9px 0px 3px;
+    border-radius: 6px;
+    text-align: center;
+
+}

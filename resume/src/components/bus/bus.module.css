@@ -1,0 +1,97 @@
+
+.cover{
+    width: 80%;
+    height: 60%;
+}
+
+.window1{
+    position: absolute;
+    width: 15%;
+    height: 27%;
+    left: 5%;
+    top: 5%;
+    background: white;}
+ .window2{
+position: absolute;
+width: 15%;
+height: 27%;
+left: 40%;
+top: 5%;
+
+background: white;}
+.bus{
+    position: absolute;
+    width: 60%;
+    height: 50%;
+    left: 20%;
+    top: 20%;      
+            background: linear-gradient(250.81deg, #8F92D9 69.83%, rgba(4, 5, 28, 0.84) 92.89%);     border-radius: 20px;
+}
+.window3{
+    position: absolute;
+    width: 15%;
+    height: 27%;
+left: 60%;
+top: 5%;
+
+background: white
+}
+.window4{
+    /* Rectangle 4 */
+
+
+position: absolute;
+width: 15%;
+height: 27%;
+left: 80%;
+top: 5%;
+
+background: white;
+}
+.door{
+    /* Rectangle 5 */
+
+
+position: absolute;
+width: 15%;
+height:50%;
+left: 25%;
+top: 50%;
+
+background: white;
+}
+.wheel1{
+    
+position: absolute;
+width: 20%;
+height: 40%;
+left: 10%;
+top:80%;
+border-radius: 100%;
+background: black;
+border-radius: 100%;
+z-index: -1;
+
+}
+
+.wheel2{
+    /* Ellipse 2 */
+    border-radius: 100%;
+    z-index: -1;
+
+
+position: absolute;
+width: 20%;
+height: 40%;
+left: 70%;
+top: 80%;
+background: black;
+}
+.animate{
+    animation: jump 2s forwards;
+}
+@keyframes jump{
+    0%{
+        transition: fade-in;
+    }
+}
