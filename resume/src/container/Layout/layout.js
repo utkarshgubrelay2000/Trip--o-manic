@@ -1,7 +1,8 @@
 import React,{Component} from 'react'
 import Header from '../../components/nav/header'
 import Bus from '../../components/bus/bus'
-class    Layout      extends Component{
+import Car from '../../components/car/car'
+class    Layout  extends Component{
   state={
       people:0
   }
@@ -22,14 +23,14 @@ traveller=<p> book your drive </p>
 traveller=<Bus/>
     }
     else{
-        traveller=<h1>Car</h1>
+        traveller=<Car/>
     }
 return(
 <div >
  <Header />
  <div style={{
      
-     width:"100%",
+     width:"98vw",
      height:"70vh",
      textAlign:"center",
      fontSize:"6vh",

@@ -8,3 +8,26 @@
     text-align: center;
 
 }
+.menu{
+    font-family: Georgia;
+    font:bolder;
+    float: right;
+   margin: 8px;
+    box-shadow: 2px 2px 7px black;
+    border: chocolate 2px solid;
+    padding: 5px;
+    margin-right: 20px;
+
+
+    height: 60%;
+    color: lavender;
+    padding: 5px;
+  background-color: sienna;
+    text-align: center;
+    width: 10%;
+}
+@media (min-width:500px){
+    .menu{
+        display: none;
+    }
+}

@@ -90,8 +90,10 @@ background: black;
 .animate{
     animation: jump 2s forwards;
 }
-@keyframes jump{
-    0%{
-        transition: fade-in;
+@media (max-width:500px){
+    .bus{
+        width: 63vw;
+        height: 30vh;
+        
     }
 }

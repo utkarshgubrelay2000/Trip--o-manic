@@ -1,0 +1,167 @@
+.carCover{
+
+    position: absolute;
+    width: 60vw;
+    height: 40vh;
+    left: 22%;
+    top: 25%;
+    
+    background: radial-gradient(50% 50% at 50% 50%, #C62A2A 0%, rgba(224, 31, 31, 0.99) 45.31%, rgba(193, 40, 40, 0.88) 85.42%);
+    background-blend-mode: darken;
+    box-shadow: 16px 11px 0px 8px rgba(224, 17, 17, 0.95);
+    border-radius: 206.5px 80px 36px 44px;
+    transform: ease-in 4s forwards;
+}
+
+.carFront{
+
+    position: absolute;
+    width: 50vw;
+    height: 33vh;
+    left: -19%;
+    top: 38%;
+    z-index: -1;
+    background: radial-gradient(50% 50% at 50% 50%, #C62A2A 0%, rgba(224, 31, 31) 45.31%, rgba(193, 40, 40) 85.42%);
+    background-blend-mode: darken;
+    box-shadow: -6px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 112px 0px 0px 0px;
+}
+.carWin1{
+    position: absolute;
+    width: 14vw;
+    height: 20vh;
+    left: 15%;
+    top: 7%;
+    background: #F4E6E6;
+    border-radius: 71% 0px 0px 0px
+}
+.carWin2{
+
+    position: absolute;
+    width: 14vw;
+    height: 20vh;
+    left: 58%;
+    top: 7%;
+    background: #F4E6E6;
+    border-radius: 57% 0px 0px 0px;
+}
+.carDoor{
+    position: absolute;
+    width: 14vw;
+    height: 25vh;
+    left: 15%;
+    top: 50%;
+    
+    background: radial-gradient(50% 50% at 50% 50%, #C62A2A 0%, rgba(224, 31, 31, 0.99) 45.31%, rgba(193, 40, 40, 0.88) 85.42%);
+    background-blend-mode: darken;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+.carLock{
+
+    position: absolute;
+    width: 2vw;
+    height:2vh;
+    left: 26%;
+    top: 60%;
+    border-radius: 100%;
+    background: #C4C4C4;
+}
+.carDoor1{
+    position: absolute;
+    width: 14vw;
+    height: 25vh;
+    left: 58%;
+    top: 50%;
+    
+    background: radial-gradient(50% 50% at 50% 50%, #C62A2A 0%, rgba(224, 31, 31, 0.99) 45.31%, rgba(193, 40, 40, 0.88) 85.42%);
+    background-blend-mode: darken;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+.carLock1{
+
+    position: absolute;
+    width: 2vw;
+    height:2vh;
+    left: 70%;
+    top: 60%;
+    border-radius: 100%;
+    background: #C4C4C4;
+}
+.carWheel1{
+    
+position: absolute;
+width: 16vw;
+    height: 26vh;
+    left: -6%;
+    top: 85%;
+
+background:black;
+background-blend-mode: darken;
+border-radius: 100%;
+z-index: -1;
+animation: wheeling 5s infinite alternate;
+}
+.carWheel2{
+ 
+    animation: wheeling 5s infinite alternate;
+position: absolute;
+width: 16vw;
+    height: 26vh;
+    left: 71%;
+    top: 85%;
+
+background:black;
+background-blend-mode: darken;
+border-radius: 100%;
+z-index: -1;
+}
+@media (max-width:700px){
+    .carCover{
+
+        width: 60vw;
+        height: 33vh;
+    }
+    .carFront{
+       display: none;
+    }
+    .carWin1{
+
+        width: 17vw;
+    height: 13vh;
+    left: 10vh;
+    }
+    
+    .carWin2{
+        width: 17vw;
+    height: 13vh;
+    left: 60%;
+    }
+    
+.carDoor{
+    width: 17vw;
+    height: 16vh;
+    left: 10vw;
+}
+.carDoor1{
+    width: 17vw;
+    height: 16vh;
+    left:  60%;
+}
+.carWheel1{
+    left: 6vh;
+}
+.carWheel2{
+    left: 70%;
+}
+}
+@keyframes wheeling{
+    from{
+        transform: rotate(0deg);
+        background-color: rgb(17, 16, 16);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

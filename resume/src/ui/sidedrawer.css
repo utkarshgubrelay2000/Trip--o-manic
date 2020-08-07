@@ -1,0 +1,41 @@
+.sidedrawer{
+    background-color: sienna;
+    width: 60%;
+    height: 100vh;
+    position: fixed;
+}
+.span{
+    font-family: cursive;
+    
+    box-shadow: 6px 0px 2px black;
+    /* border: rgb(202, 111, 46) 2px solid; */
+    padding: 5px;
+    width: 50%;
+    margin: 7%;
+    margin-top: 12%
+   
+}
+.sidein{
+
+    animation: easein 2s forwards;
+}
+.sideout{
+    animation: easeout 2s forwards;
+}
+@keyframes easein{
+    from{
+        transform: translate(-100%);
+    }
+    to{
+        transform: translate(0%);
+    }
+}
+@keyframes easeout{
+    from{
+        transform: translate(0%);
+    }
+    to{
+        transform: translate(-100%);
+        opacity: 0;
+    }
+}

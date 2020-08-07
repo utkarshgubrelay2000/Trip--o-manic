@@ -3,11 +3,11 @@ import "./nav.css"
 function   NavigationItems (props){
    return(
 
-    <div className="navItems">
+    <div className={props.className} >
     
-        <h1 >
+    
             {props.children}
-        </h1>
+        
     </div>
    ) 
 }
