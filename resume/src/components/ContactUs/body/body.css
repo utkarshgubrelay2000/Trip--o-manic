@@ -1,0 +1,77 @@
+*{
+    margin:0;
+
+    padding: 0;
+}
+.inputDiv{
+    border: black 9px solid;
+    width: 70%;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 10vmin;
+}
+.kindly{
+    position: relative;
+    left: 20%;
+   
+    font-size: 3vw;
+}
+.labelDiv{
+    color: black;
+    display: grid;
+    text-align: left;
+    font-size: 4vw;
+    margin: 8%
+}
+label{
+    font-weight: 900;
+    font-family: 'Gill Sans';
+margin: 5%;
+}
+.input{
+    position: absolute;
+    top: 36%;
+    width: 34%;
+    height: 6%;
+    left: 45%;
+    background-color: darkgray;
+    border-radius: 3vh;
+}
+.input2{
+    position: absolute;
+    top: 54%;
+    width: 34%;
+    height: 6%;
+    left: 45%;
+    background-color: darkgray;
+    border-radius: 3vh;
+}
+.input3{
+    position: absolute;
+    top: 72%;
+    width: 34%;
+    height: 6%;
+    left: 45%;
+    background-color: darkgray;
+    border-radius: 3vh;
+
+}
+.inputFocus{
+    border: brown 3px solid;
+}
+@media (min-width:1000px){
+    .inputDiv{
+        width: 60%;
+    }
+}
+.button{
+    width: 24%;
+    height: 5vh;
+    border: black solid 3px;
+    border-radius: 20vh;
+    background-color: revert;
+    font-family: monospace;
+    font-size: 2vh
+}

@@ -1,0 +1,21 @@
+*{
+    margin:'0';
+
+    padding: 0;
+}
+.lets{
+    font-size: 5vw;
+    z-index: 1;
+    position: absolute;
+    left: 33%;
+    top: 17%;
+    font: bolder;
+    font-family: monospace;
+    opacity: .55;
+    color: black;
+}
+.trans{
+    width: 100%;
+    height: 45vh;
+    background-color: rgba(26, 110, 188, 0.34);
+}
