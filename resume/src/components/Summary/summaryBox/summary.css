@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+z-index: -1;
+    position: fixed;
+}
+.box{
+    position: relative;
+    margin: 3% auto 0 auto;
+
+    top: 10vh;
+    
+    width: 74%;
+    background: linear-gradient(92.7deg, #A1FBFB 17.68%, rgba(182, 241, 209, 0) 52.25%);
+    border: 4px solid #000000;
+    height: 32vh;
+    border-radius: 5vw;
+}
+.H1{
+position:relative;
+
+left:30%;
+
+}
+.Place{
+
+    position: absolute;
+   
+    left: 13%;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3vh;
+   top: 15%;
+color: #000000;
+}
+.Persons{
+    position: absolute;
+    left: 13%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3vh;
+    color: #000000;
+    top: 55%;
+
+}
+.Days{
+    position: absolute;
+    left: 64%;
+    top: 15%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3vh;
+    
+    color: #000000;
+}
+.Date{
+   
+    position: absolute;
+    left: 64%;
+    
+    top:55%;
+    
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 3vh;
+color: #000000;
+}
+.booking{
+   
+    position: absolute;
+    top: 8%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.7vh;
+    color: #000000;
+    left: 80%;
+}
+.more{
+    
+    position: absolute;
+    width: 100%;
+    left: 74%;
+    top: 74%;
+    font-family: cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.90vh;
+cursor: pointer;
+    color: rgba(10, 22, 63, 0.88);
+}
+@media (max-width:400px){
+    .more{
+        left: 28%;
+    top: 80%;
+    }
+    .booking{
+        left: 5%;
+    }
+    .H1{
+        font-size: 3vh;
+        margin-left: -18%;
+    }
+    .box{
+        margin-left: 6%;
+    margin-top: 3%;
+}
+    }
+

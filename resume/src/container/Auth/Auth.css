@@ -1,0 +1,284 @@
+.authDiv{
+    background-color:#8027ea;
+  
+    height: 920px;
+    
+}
+.middleDiv{
+   width: 80%;
+ height: 90vh;
+margin: auto;
+background-color: #C4C4C4;
+border-radius: 50px;
+margin-top: 8vh;
+}
+.signUp{
+    position: relative;
+    left: 28%; 
+    font-family: Kreon;
+    font-style: normal;
+    
+    font-size: 8vh;
+    
+    color: #000000;
+}
+.name{
+    position: absolute;
+    left: 26%;
+    top: 24%;
+    font-size: 4vh;
+    font-family: Kreon;
+    
+}
+.loginpassword{
+   
+    position: absolute;
+    left: 26%;
+    top: 55%;
+    font-size: 4vh;
+    
+}
+.loginname{
+    position: absolute;
+    left: 26%;
+    top: 40%;
+    font-size: 4vh;
+    font-family: Kreon;
+    
+}
+.password{
+   
+    position: absolute;
+    left: 26%;
+    top: 41%;
+    font-size: 4vh;
+    
+}
+.cpassword{
+   
+    position: absolute;
+    left: 17%;
+    top: 58%;
+    font-size: 4vh;
+    
+}
+.inputUsername{
+    position: absolute;
+    left: 24%;
+    top: 33%;
+    width: 53%;
+    height: 6%;
+    border-radius: 20px;
+    font-family: kreon;
+    font-size: 3vh;
+    text-align: start;
+}
+.inputPassword{
+    position: absolute;
+    left: 24%;
+    top: 51%;
+    width: 53%;
+    height: 6%;
+    border-radius: 20px;
+    font-family: kreon;
+    font-size: 3vh;
+    text-align: start;
+}
+.loginInputUsername{
+    position: absolute;
+    left: 24%;
+    top: 49%;
+    width: 53%;
+    height: 6%;
+    border-radius: 20px;
+    font-family: kreon;
+    font-size: 3vh;
+    text-align: start;
+}
+.loginInputPassword{
+    position: absolute;
+    left: 24%;
+    top: 66%;
+    width: 53%;
+    height: 6%;
+    border-radius: 20px;
+    font-family: kreon;
+    font-size: 3vh;
+    text-align: start;
+}
+.inputCpassword{
+    position: absolute;
+    left: 24%;
+    top: 68%;
+    width: 53%;
+    height: 6%;
+    border-radius: 20px;
+    font-family: kreon;
+    font-size: 3vh;
+    text-align: start;
+}
+.Button{
+    
+position: absolute;
+width: 23vh;
+    height: 8vh;
+    left: 27%;
+    top: 78%;
+    background: linear-gradient(91.79deg, #8027EA 9.13%, rgba(14, 2, 28, 0.72) 96.72%);
+    border-radius: 69px;
+    border: black 2px solid;
+    font-size: 3vh;
+    font-family: kreon;
+    font-weight: 900;
+}
+.Account{
+    position: absolute;
+    width: 71%;
+    height: 73px;
+    left: 20%;
+    top: 93%;
+    font-family: Kreon;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3vh;
+    line-height: 25px;
+    color: #000000;
+}
+.Authhandler{
+    position: absolute;
+    font-family: Kreon;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3vh;
+    
+    width: 17vh;
+        height: 5vh;
+        
+        background: linear-gradient(91.79deg, #8027EA 9.13%, rgba(14, 2, 28, 0.72) 96.72%);
+        border-radius: 69px;
+}
+@media (min-width:700px){
+    .authDiv{
+        height: 1300px;
+    }
+}
+@media (min-width:900px){
+    .authDiv{
+        height: 700px;
+    }
+    .loginname{
+        left: 36%;
+    top: 29%;
+    font-size: 7vh;
+    }
+    .loginInputUsername,.loginInputPassword{
+        height: 8%;
+    }
+    .loginpassword{
+        left: 36%;
+    top: 51%;
+    font-size: 7vh;
+    }
+    .Authhandler{
+        left: 33%;
+    top: 56%;
+    width: 21vh;
+    height: 8vh;
+    }
+    .name{
+        left: 35%;
+    top: 17%;
+    font-size: 6vh;
+    }
+    .password{
+        left: 36%;
+    top: 34%;
+    font-size: 6vh;
+    }
+    .cpassword{
+        left: 29%;
+    top: 52%;
+    font-size: 6vh;
+    }
+    .inputUsername,.inputPassword,.inputCpassword{
+        height: 8%;
+        border-radius: 200px;
+    }
+    .signUp{
+        left: 40%;
+    }
+    .Account{
+        font-size: 4vh;
+    }
+}
+@media (min-width:1200px){
+    .authDiv{
+        height: 700px;
+        text-align: center;
+        
+    }
+    .loginname{
+        left: 33%;
+    top: 20%;
+    font-size: 6vh;
+}
+.loginpassword{
+    left: 33%;
+    top: 45%;
+    font-size: 6vh;
+
+    }
+    .loginInputUsername{
+        top: 40%;
+        height: 8%;
+    border-radius: 46px;
+    }
+    .loginInputPassword{
+        height: 8%;
+        border-radius: 60px;
+    }
+    .Account{
+        left: 5%;
+        font-size: 4vh;
+    }
+    .Authhandler{
+        left: 33%;
+    top: 56%;
+    width: 21vh;
+    height: 8vh;
+    }
+    .middleDiv{
+        height: 93vh;
+        border-radius: 200px;
+    }
+    .signUp{
+        left: 0;
+    }
+    .name{
+        left: 35%;
+    top: 18%;
+    font-size: 6vh;
+    }
+    .password{
+        left: 36%;
+    top: 35%;
+    font-size: 6vh;
+    }
+    .cpassword{
+        left: 32%;
+    top: 54%;
+    font-size: 6vh;
+    }
+    .inputPassword{
+        height: 8%;
+    }
+    
+    
+    .inputCpassword{
+        height: 8%;
+    }
+    .inputUsername{
+        height: 8%;
+    }
+    
+}
