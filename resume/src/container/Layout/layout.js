@@ -4,6 +4,7 @@ import Bus from '../../components/bus/bus'
 import Car from '../../components/car/car'
 import Input from '../../ui/input'
 import axios from 'axios'
+
 class    Layout  extends Component{
   state={
      
@@ -52,11 +53,12 @@ class    Layout  extends Component{
         
    }
 render(){
+   
     let traveller;
-    if(this.state.inputdetails[0].value>0){
+    if(this.state.inputdetails[0].value>0&&this.state.inputdetails[0].value<5){
         traveller=<Car/>
     }
-    else   if(this.state.inputdetails[0].value>5){
+    else   if(this.state.inputdetails[0].value>4){
         traveller=<Bus/>
     }
     else{
@@ -86,8 +88,10 @@ return(
        onChange={(e)=> this.changeHandler(e,index)   } /> <br/> </div>
  })}
  <button onClick={this.addTrip}>  Add trip</button>
+ 
  </div>
  
 )}
 }
-export default Layout
+
+export default (Layout)

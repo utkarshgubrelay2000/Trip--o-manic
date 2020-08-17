@@ -59,10 +59,10 @@ function  Summary(){
            <br/>
            <br/>
            <br/>
-           <h1>Something Went wrong</h1>
+        
            <p>
-               {Error}
-               <Errorr/>
+               
+               <Errorr errorMessage={Error}/>
            </p>
        </div>
    }

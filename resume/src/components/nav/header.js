@@ -5,13 +5,15 @@ import SideDrawer from '../../ui/Sidedrawer'
 import NavigationItems from './navigationitems/navigationitms'
 import {NavLink} from 'react-router-dom'
 function   Header (props){
-    const NavItems=useState([
+    const [NavItems]=useState([
        {title:'Contact Us' , link:'/Contact'},
-       {title:'About Us' , link:'/about'},
+       {title:'Sign Up' , link:'/about'},
        {title:'Trip Summary' , link:'/Tripsummary'},
     ])[0]
    const [showSideDrawer,setSidedrawer]=useState(false)
-  
+   const token = localStorage.getItem('token')
+   console.log(token);
+   
    return( 
    
    <div >
@@ -32,18 +34,43 @@ function   Header (props){
       </button>
      
     
-      {NavItems.map(items=>{
-         return ( 
-            <NavigationItems className="navItems" key={items.title}> 
-            <NavLink to={items.link} style={{
+     
+            <NavigationItems className="navItems" > 
+            <NavLink to='/contact' style={{
                textDecoration:'none',
                color:'black'
             }}> 
-    {items.title}
+   Contact Us
          </NavLink>
              </NavigationItems>
-            )
-      })}
+            <NavigationItems className="navItems" > 
+            <NavLink to='/Tripsummary' style={{
+               textDecoration:'none',
+               color:'black'
+            }}> 
+   Trip Summary
+         </NavLink>
+             </NavigationItems>
+          {token? 
+            <NavigationItems className="navItems" > 
+            <NavLink to='/logout' style={{
+               textDecoration:'none',
+               color:'black'
+            }}> 
+   Logout
+         </NavLink>
+         </NavigationItems>
+          : 
+            <NavigationItems className="navItems" > 
+            <NavLink to='/Auth' style={{
+               textDecoration:'none',
+               color:'black'
+            }}> 
+   SignUp
+         </NavLink>
+         </NavigationItems>
+         }
+         
 
     </div>
             </div>

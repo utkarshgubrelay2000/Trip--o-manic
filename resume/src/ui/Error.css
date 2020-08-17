@@ -1,7 +1,8 @@
 
    
     .main {
-        position: relative;
+        position: absolute;
+        left: 31%;
     }
 
     .dragon {
@@ -268,4 +269,11 @@
             transform: scale(1, 1);
             opacity: 0;
         }
+    }
+    .Error{
+        font-family: cursive;
+        position: absolute;
+        top: 25%;
+        font-size: 70%;
+        left: 31%;
     }

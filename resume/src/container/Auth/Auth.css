@@ -12,106 +12,110 @@ background-color: #C4C4C4;
 border-radius: 50px;
 margin-top: 8vh;
 }
+
 .signUp{
     position: relative;
     left: 28%; 
     font-family: Kreon;
     font-style: normal;
     
-    font-size: 8vh;
+    font-size: 200%;
     
     color: #000000;
 }
 .name{
-    position: absolute;
+    position: relative;
     left: 26%;
-    top: 24%;
-    font-size: 4vh;
+    top: 10vh;
+    font-size: 6vw;
     font-family: Kreon;
     
 }
 .loginpassword{
-   
-    position: absolute;
+    
+    font-family: Kreon;
+    position: relative;
     left: 26%;
-    top: 55%;
-    font-size: 4vh;
+    top: 27vh;
+    font-size: 190%;
     
 }
 .loginname{
-    position: absolute;
+    font-family: Kreon;
+    position: relative;
     left: 26%;
-    top: 40%;
-    font-size: 4vh;
+    top: 15vh;
+    font-size: 190%;
     font-family: Kreon;
     
 }
 .password{
    
-    position: absolute;
+    position: relative;
     left: 26%;
-    top: 41%;
-    font-size: 4vh;
+    top: 18vh;
+    font-size: 190%;
     
 }
 .cpassword{
    
-    position: absolute;
-    left: 17%;
-    top: 58%;
-    font-size: 4vh;
+    position: relative;
+    left: 15%;
+    top: 24vh;
+    font-size: 6vw;
     
 }
 .inputUsername{
-    position: absolute;
-    left: 24%;
-    top: 33%;
-    width: 53%;
-    height: 6%;
+    position: relative;
+    left: 0;
+    left: 9%;
+    top: 15vh;
+    width: 72%;
+    height: 7vh;
     border-radius: 20px;
     font-family: kreon;
     font-size: 3vh;
     text-align: start;
 }
 .inputPassword{
-    position: absolute;
-    left: 24%;
-    top: 51%;
-    width: 53%;
-    height: 6%;
+    position: relative;
+    left:9%;
+    top: 20vh;
+    width: 72%;
+    height: 7vh;
     border-radius: 20px;
     font-family: kreon;
     font-size: 3vh;
     text-align: start;
 }
 .loginInputUsername{
-    position: absolute;
-    left: 24%;
-    top: 49%;
-    width: 53%;
-    height: 6%;
+    position: relative;
+    left: 9%;
+    top: 21vh;
+    width: 72%;
+    height: 7vh;
     border-radius: 20px;
     font-family: kreon;
     font-size: 3vh;
     text-align: start;
 }
 .loginInputPassword{
-    position: absolute;
-    left: 24%;
-    top: 66%;
-    width: 53%;
-    height: 6%;
+    position:relative;
+    left: 9%;
+    top: 28vh;
+    width: 72%;
+    height: 7vh;
     border-radius: 20px;
     font-family: kreon;
     font-size: 3vh;
     text-align: start;
 }
 .inputCpassword{
-    position: absolute;
-    left: 24%;
-    top: 68%;
-    width: 53%;
-    height: 6%;
+    position: relative;
+    left: 9%;
+    top: 27vh;
+    width: 72%;
+    height: 7vh;
     border-radius: 20px;
     font-family: kreon;
     font-size: 3vh;
@@ -121,10 +125,24 @@ margin-top: 8vh;
     
 position: absolute;
 width: 23vh;
-    height: 8vh;
-    left: 27%;
-    top: 78%;
-    background: linear-gradient(91.79deg, #8027EA 9.13%, rgba(14, 2, 28, 0.72) 96.72%);
+height: 8vh;
+left: 27%;
+top: 78%;
+background: linear-gradient(91.79deg, #8027EA 9.13%, rgba(14, 2, 28, 0.72) 96.72%);
+    border-radius: 69px;
+    border: black 2px solid;
+    font-size: 3vh;
+    font-family: kreon;
+    font-weight: 900;
+}
+.ButtonLogin{
+    
+position: absolute;
+width: 23vh;
+height: 8vh;
+left: 27%;
+top: 70%;
+background: linear-gradient(91.79deg, #8027EA 9.13%, rgba(14, 2, 28, 0.72) 96.72%);
     border-radius: 69px;
     border: black 2px solid;
     font-size: 3vh;
@@ -144,6 +162,19 @@ width: 23vh;
     line-height: 25px;
     color: #000000;
 }
+.AccountLogin{
+    position: absolute;
+    width: 71%;
+    height: 73px;
+    left: 20%;
+    top: 86%;
+    font-family: Kreon;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3vh;
+    line-height: 25px;
+    color: #000000;
+}
 .Authhandler{
     position: absolute;
     font-family: Kreon;
@@ -152,133 +183,147 @@ width: 23vh;
     font-size: 3vh;
     
     width: 17vh;
-        height: 5vh;
-        
+    height: 5vh;
+    
         background: linear-gradient(91.79deg, #8027EA 9.13%, rgba(14, 2, 28, 0.72) 96.72%);
         border-radius: 69px;
-}
+    }
 @media (min-width:700px){
     .authDiv{
-        height: 1300px;
+        height: 100%;
+        width: 100%;
     }
+            .loginname{
+                left: 17vw;
+                top: 17vh;
+                font-size: 6vw;
+            }
+            .Account{
+                top: 100vh;
+            }
+            .Authhandler{
+                top: 0;
+                left: 51%;
+            }
+            .loginInputUsername,.loginInputPassword{
+                height: 8vh;
+            }
+            
+            .signUp{
+                left: 39%;
+                font-size: 350%;
+            }
+            .loginpassword{
+                left: 17vw;
+    top: 27vh;
+    font-size: 7vw;
+            }
+            .ButtonLogin{
+                top: 81vh;
+            }
+            .Authhandler{
+                
+            width: 21vh;
+            height: 8vh;
+            }
+            .name{
+                left: 23%;
+                top: 12vh;
+    font-size: 6vw;
+            }
+            .Button{
+                top: 91vh;
+            }
+            .password{
+                left: 23%;
+                top: 17vh;
+                font-size: 6vw;
+            }
+            .cpassword{
+                left: 10%;
+                top: 25vh;
+                font-size: 4.5vw;
+            }
+            .AccountLogin{
+                top: 99%;
+            }
 }
 @media (min-width:900px){
-    .authDiv{
-        height: 700px;
-    }
-    .loginname{
-        left: 36%;
-    top: 29%;
-    font-size: 7vh;
-    }
-    .loginInputUsername,.loginInputPassword{
-        height: 8%;
-    }
-    .loginpassword{
-        left: 36%;
-    top: 51%;
-    font-size: 7vh;
-    }
-    .Authhandler{
-        left: 33%;
-    top: 56%;
-    width: 21vh;
-    height: 8vh;
-    }
-    .name{
-        left: 35%;
-    top: 17%;
-    font-size: 6vh;
-    }
-    .password{
-        left: 36%;
-    top: 34%;
-    font-size: 6vh;
-    }
-    .cpassword{
-        left: 29%;
-    top: 52%;
-    font-size: 6vh;
+    .password,.cpassword,.name{
+        top: 6vh;
     }
     .inputUsername,.inputPassword,.inputCpassword{
-        height: 8%;
-        border-radius: 200px;
+        top: 6vh;
+        margin: 3vh;
     }
-    .signUp{
-        left: 40%;
+    .loginpassword,.loginname{
+        top: 10vh;
     }
-    .Account{
-        font-size: 4vh;
+    .loginInputUsername,.loginInputPassword{
+        top: 10vh;
+        margin: 3vh;
     }
+ 
 }
 @media (min-width:1200px){
     .authDiv{
-        height: 700px;
-        text-align: center;
-        
+        height: 100%;
+      
     }
-    .loginname{
-        left: 33%;
-    top: 20%;
-    font-size: 6vh;
+ .loginpassword,   .loginname{
+    top: 14vh;
+    font-size: 5vw;
+    left: 20%;
 }
-.loginpassword{
-    left: 33%;
-    top: 45%;
-    font-size: 6vh;
 
-    }
-    .loginInputUsername{
-        top: 40%;
-        height: 8%;
+    .loginInputUsername,.loginInputPassword{
+        top: 14vh;
+        height: 8vh;
     border-radius: 46px;
+    margin: 2vh;
     }
-    .loginInputPassword{
-        height: 8%;
-        border-radius: 60px;
-    }
+   
     .Account{
-        left: 5%;
-        font-size: 4vh;
+        left: 30%;
+        font-size: 200%;
+    }
+    .AccountLogin{
+        left: 30%;
+        font-size: 200%;
     }
     .Authhandler{
-        left: 33%;
-    top: 56%;
+        top: -2vh;
+        left: 40%;
+    
     width: 21vh;
     height: 8vh;
     }
     .middleDiv{
-        height: 93vh;
-        border-radius: 200px;
+        height: 98vh;
+        border-radius: 20px;
+        width: 60%;
     }
     .signUp{
-        left: 0;
+        left: 40%;
     }
-    .name{
-        left: 35%;
-    top: 18%;
-    font-size: 6vh;
+    .name,.password,.cpassword{
+        left: 8%;
+        top: 13vh;
+        font-size: 4vw;
     }
-    .password{
-        left: 36%;
-    top: 35%;
-    font-size: 6vh;
+   
+    .inputPassword,.inputUsername,.inputCpassword{
+        left: 5%;
+    top: 12vh;
+    height: 8vh;
+    margin: 2vh;
     }
-    .cpassword{
-        left: 32%;
-    top: 54%;
-    font-size: 6vh;
+ 
+    .Button{
+        top: 100vh;
     }
-    .inputPassword{
-        height: 8%;
-    }
-    
-    
-    .inputCpassword{
-        height: 8%;
-    }
-    .inputUsername{
-        height: 8%;
+    .Account,.AccountLogin{
+top: 110vh;
     }
     
 }
