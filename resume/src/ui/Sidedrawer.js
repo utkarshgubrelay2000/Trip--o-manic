@@ -1,35 +1,57 @@
-import React, { Component }  from 'react'
+import React, { Component } from 'react'
 import './sidedrawer.css'
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class SideDrawer extends Component {
-    
-    render(){
-     
-       
-   
-        return(
+
+    render() {
+        let token = localStorage.getItem('token')
+
+
+        return (
             <div className={this.props.css}>
-{this.props.navlist?
-this.props.navlist.map(items=>{
-    return ( <div className='span' key={items.title}>
+                <div className='span'>
+                    {token ? <NavLink to='/logout' style={{
+                        textDecoration: 'none',
+                        color: "lavender"
+                    }}>  <span >
 
-        <NavLink to={items.link}   style={{
-           textDecoration:'none',
-           color:"lavender"
-        }}>  <span >
+                            Logout<br />
+                        </span>
+                    </NavLink>
+                        : <NavLink to='/Auth' style={{
+                            textDecoration: 'none',
+                            color: "lavender"
+                        }}>  <span >
 
-{items.title} <br/>
-        </span>
-     </NavLink>
-     </div>
+                                SignUp <br />
+                            </span>
+                        </NavLink>
+                    }
+                </div>
+                <div className='span'>
 
-)
-}):null}
+                    <NavLink to='/contact' style={{
+                        textDecoration: 'none',
+                        color: 'lavender'
+                    }}>
+                        Contact Us
+         </NavLink>
+                </div>
+                <div className='span'>
+                    <NavLink to='/Tripsummary' style={{
+                        textDecoration: 'none',
+                        color: 'lavender'
+                    }}>
+                        Trip Summary
+         </NavLink>
+                </div>
 
-</div>
 
-) 
-}
+
+            </div>
+
+        )
+    }
 }
 export default SideDrawer

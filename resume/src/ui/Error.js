@@ -27,9 +27,9 @@ function  Error (props){
         <div className="fire-wrapper">
             <div className="fire"></div>
         </div>
-        <div class="progress">
-            <div class="outer">
-                <div class="inner"></div>
+        <div className="progress">
+            <div className="outer">
+                <div className="inner"></div>
             </div>
         </div>
 

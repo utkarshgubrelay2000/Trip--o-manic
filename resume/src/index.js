@@ -4,11 +4,17 @@ import './index.css';
 import App from './container/App/App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter} from 'react-router-dom';
-import  reducer from './store/reducers'
+import  reducer from './store/reducers/Loginreducers'
+import  signupReducer from './store/reducers/signUpReducer'
 import {Provider} from 'react-redux';
-import {createStore, applyMiddleware} from 'redux';  
+import {createStore, applyMiddleware,combineReducers,compose} from 'redux';  
 import thunk from 'redux-thunk';
-const store=createStore(reducer,applyMiddleware(thunk))
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const combi=combineReducers({
+  Login:reducer,
+  signup:signupReducer
+})
+const store=createStore(combi,composeEnhancers(applyMiddleware(thunk)))
 
 
 ReactDOM.render(

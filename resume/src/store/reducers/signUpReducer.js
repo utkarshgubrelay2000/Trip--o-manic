@@ -1,26 +1,24 @@
-import * as actionTypes from './actions/action'
-import firebase from '../config/fire'
+import * as actionTypes from '../actions/action'
+import firebase from '../../config/fire'
 const intialState={
 token:null,
     user:"kk",
       loading:false,error:null
 }
-export  const user=(email,password)=>{
-    console.log('jjj');
+export  const Signup=(email,password)=>{
+  
               
     return dispatch=>{
-               dispatch(user_request)            
-               firebase.auth().signInWithEmailAndPassword(email,password).then(u=>{
-                console.log(u.user.ga.a,u.user.email);
-                dispatch(user_success(u.user.ga.a,u.user.email))
-                
-            }).catch(err=>{
-                console.log(err);
-               dispatch(user_error(err))
-                
-            }) 
-                
-              }}
+
+        dispatch(user_request())
+        firebase.auth().createUserWithEmailAndPassword(email,password).then(u=>{
+           
+            dispatch(user_success(u.user.ga.a,u.user.email))
+        }).catch(err=>{
+       
+            dispatch(user_error(err.message))
+        })}}
+              
 export const user_request=()=>{
     return{
     type: actionTypes.user_request
@@ -44,11 +42,10 @@ user:email,token:token
 
 
 const reducer=(state=intialState,action)=>{
-    console.log(state);
-    
+  
     switch (action.type) {
         case actionTypes.user_request:
-            
+          
             
             return{
                 ...state,
@@ -56,7 +53,7 @@ const reducer=(state=intialState,action)=>{
             }
         
         case actionTypes.user_success:
-        console.log('user');
+       
         localStorage.setItem('token',action.token)
         localStorage.setItem('user',action.user)
             return{
