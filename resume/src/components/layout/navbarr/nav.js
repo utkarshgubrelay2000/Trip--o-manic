@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./ui.css"
-import logo from '../../logo.png'
-import SideDrawer from '../../ui/Sidedrawer'
+
+import SideDrawer from '../../../ui/Sidedrawer'
 import NavigationItems from './navigationitems/navigationitms'
 import { NavLink } from 'react-router-dom'
 function Header(props) {
@@ -17,7 +17,7 @@ function Header(props) {
             <SideDrawer css='sidedrawer sidein' /> : <SideDrawer css='sidedrawer sideout' />
          }
          <div className="header">
-            <img src={logo} alt="logo" style={{
+            <img src='' alt="logo" style={{
                width: "10vw",
                height: '8vh',
                float: 'left',
@@ -31,10 +31,11 @@ function Header(props) {
 
 
 
+
             <NavigationItems className="navItems" >
                <NavLink to='/contact' style={{
                   textDecoration: 'none',
-                  color: 'black'
+                  color: 'white'
                }}>
                   Contact Us
          </NavLink>
@@ -42,13 +43,13 @@ function Header(props) {
             <NavigationItems className="navItems" >
                <NavLink to='/Tripsummary' style={{
                   textDecoration: 'none',
-                  color: 'black'
+                  color: 'white'
                }}>
                   Trip Summary
          </NavLink>
             </NavigationItems>
             {token ?
-               <NavigationItems className="navItems" >
+               <NavigationItems className="Signup" >
                   <NavLink to='/logout' style={{
                      textDecoration: 'none',
                      color: 'black'
@@ -57,7 +58,7 @@ function Header(props) {
          </NavLink>
                </NavigationItems>
                :
-               <NavigationItems className="navItems" >
+               <NavigationItems className="Signup" >
                   <NavLink to='/Auth' style={{
                      textDecoration: 'none',
                      color: 'black'

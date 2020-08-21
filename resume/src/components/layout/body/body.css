@@ -1,0 +1,12 @@
+.bodyDiv{
+    width: 100%;
+    height: 900px;
+    position: relative;
+    top: -2vh;
+}
+.img{
+    width: 100%;
+    height: 900px;
+    position: relative;
+    top: -1vh;
+}

@@ -1,18 +1,40 @@
 .sidedrawer{
-    background-color: sienna;
-    width: 60%;
-    height: 100vh;
-    position: fixed;
+    
+        background-color: rgba(0,0,0,0.8);
+        width: 71%;
+        height: 100vh;
+        position: fixed;
+    }
+    .imageDiv{
+        width: 23vh;
+        height: 18vh;
+        background-color: black;
+        position: relative;
+        top: 14vh;
+        left: 9vh;
+        z-index: -2;
+        text-align: -webkit-center;
+    }
+img{
+    width: 20vh;
+    height: 15vh;
+    padding: .5vh;
+
+    position: relative;
+    top: 1vh;
 }
 .span{
     font-family: cursive;
-    
     box-shadow: 6px 0px 2px black;
     /* border: rgb(202, 111, 46) 2px solid; */
-    padding: 5px;
-    width: 50%;
-    margin: 7%;
-    margin-top: 12%
+    padding: 1vh;
+    width: 24vh;
+    margin: 2vh;
+    margin-top: 5vh;
+    position: relative;
+    top: 12vh;
+    text-align: center;
+    font-size: 2.5vh;
    
 }
 .sidein{
