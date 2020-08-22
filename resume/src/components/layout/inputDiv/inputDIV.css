@@ -1,10 +1,86 @@
 .Div{
-    border: black 9px solid;
-    width: 100%;
-    padding: 10px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 80%;
     margin: auto;
-    text-align: center;
+    
     position: relative;
-    top: -2vh;
-    background-color: green;
+    top: -5vh;
+    background: linear-gradient(219.04deg, #191A4C 22.92%, #2B4477 58.88%, #707EC2 72.57%, #ADB2CD 77.61%);
+    height: 99vh;
+}
+.para{
+    position: relative;
+    margin: auto;
+    left: -25%;
+}
+span{
+    position: relative;
+    left: -23%;
+    font-size: 2vh;
+}
+.Person{
+    position: relative;
+   
+    padding: 1vh;
+    font-size: 132%;
+    top: 5vh;
+    left: -0%;
+}
+.Date{
+    position: relative;
+    margin: 20px;
+
+    font-size: 132%;
+    top: 13vh;
+}
+.Days{
+    position: relative;
+    margin: 20px;
+    padding: 1vh;
+    font-size: 132%;
+    top: 20vh;
+}
+.Place{
+    position: relative;
+    margin: 20px;
+    padding: 1vh;
+    font-size: 132%;
+    top: 28vh;
+}
+.Input4{
+    top: 30vh;
+}
+.Input1{
+    background: #ACB4F8;
+    position: relative;
+    top: 7vh;
+    width: 69%;
+    height: 4.5vh;
+    border-radius: 4vh;
+}
+.Input2{
+    top: 14vh;
+}
+.Input3{
+    top: 23vh;
+}
+.Input2,.Input3,.Input4{
+    background: #ACB4F8;
+    position: relative;
+    
+    width: 69%;
+    height: 4.5vh;
+    border-radius: 4vh;
+}
+
+.AddTrip{
+    width: 51%;
+    position: relative;
+    top: 35vh;
+    height: 5vh;
+    font-size: 3vh;
+    left: -2%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './sidedrawer.css'
 import { NavLink } from 'react-router-dom';
-import logo from '../pexels-francesco-ungaro-281260.jpg'
+import logo from '../Images/trip_o-Manic-01.png'
 
 class SideDrawer extends Component {
 
@@ -12,8 +12,6 @@ class SideDrawer extends Component {
         return (
             <div className={this.props.css}>
                 <div className='imageDiv'>
-
-
               <img src={logo} alt=''/>
                 </div>
                 <div className='span'>

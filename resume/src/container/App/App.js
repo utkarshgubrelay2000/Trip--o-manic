@@ -1,16 +1,18 @@
-import React from 'react';
-import './App.css';
-import Layout from  '../Layout/layout';
-import Contact from '../../components/ContactUs/ContactUs'
-import Summary from '../../components/Summary/summary'
-import Auth from '../Auth/Auth'
+import React,{Suspense} from 'react';
 import {Route,Switch} from 'react-router-dom'
-import Logout from '../../components/logout/logout'
+import './App.css';
+
+const Layout = React.lazy(() => import('../Layout/layout'));
+const  Contact=React.lazy(()=>import ('../../components/ContactUs/ContactUs')) 
+const  Summary=React.lazy(()=>import  ('../../components/Summary/summary')) 
+const  Logout=React.lazy(()=>import  ('../../components/logout/logout')) 
+const Auth = React.lazy(()=> import ('../Auth/Auth'))
 function App() {
 
   return (
     <div >
      
+<Suspense fallback='Loading ...... please wait'>
 
 <Route path='/' component={Layout} exact />
       <Switch>
@@ -21,6 +23,7 @@ function App() {
     <Route path='/logout' component={Logout}  exact />
   
       </Switch>
+</Suspense>
       
     </div>
   );

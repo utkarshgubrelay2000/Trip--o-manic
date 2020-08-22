@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import './summaryBox/summary.css'
-import SumBox from './summaryBox/summarybox'
-import image from '../../pexels-francesco-ungaro-281260.jpg'
+import image from '../../Images/pexels-francesco-ungaro-281260.jpg'
 import Spinner from '../../ui/spinner'
 import Errorr from '../../ui/Error'
 import axios from 'axios'
+const SumBox=React.lazy(()=>import ('./summaryBox/summarybox'))
+
 function  Summary(){
     const [tripsum,setTripSum]=useState([]);
     const [loading,setLoading]=useState(false);

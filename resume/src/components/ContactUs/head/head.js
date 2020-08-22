@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../../../contactus.jpg'
+import image from '../../../Images/contactus.jpg'
 import './head.css'
 
 const Head=()=>{

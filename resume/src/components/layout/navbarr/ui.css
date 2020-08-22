@@ -9,7 +9,7 @@
   
 
 }
-button{
+.menu{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font: bolder;
     float: right;
@@ -20,14 +20,14 @@ button{
     margin-right: 20px;
     height: 40%;
     text-align: center;
-    font-size: 4vh;
+    font-size: 150%;
     position: relative;
-    top: 2vh;
+    margin-top: 2vh;
     background-color: rgba(0,0,0,0);
     border: 0;
    
 }
-@media (min-width:700px){
+@media (min-width:800px){
     .menu{
         display: none;
     }

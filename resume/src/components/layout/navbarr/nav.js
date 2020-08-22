@@ -4,6 +4,7 @@ import "./ui.css"
 import SideDrawer from '../../../ui/Sidedrawer'
 import NavigationItems from './navigationitems/navigationitms'
 import { NavLink } from 'react-router-dom'
+import logo from '../../../Images/trip_o-Manic-01.png'
 function Header(props) {
 
    const [showSideDrawer, setSidedrawer] = useState(false)
@@ -17,9 +18,9 @@ function Header(props) {
             <SideDrawer css='sidedrawer sidein' /> : <SideDrawer css='sidedrawer sideout' />
          }
          <div className="header">
-            <img src='' alt="logo" style={{
-               width: "10vw",
-               height: '8vh',
+            <img src={logo} alt="logo" style={{
+                  width: '20vw',
+                  height: '11vh',
                float: 'left',
                marginLeft: "5vw",
 

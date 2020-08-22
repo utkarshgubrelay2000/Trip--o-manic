@@ -9,31 +9,22 @@ class   inputDiv       extends Component{
      
         inputdetails:[
           {placeholder:'No of Person',type:'Number',value:0,
-              required:true} ,
+              required:true,classNameLabel:'Person',className:'Input1'} ,
           {placeholder:'Date',type:'calendar',value:'',
-              required:true} ,
+              required:true,classNameLabel:'Date',className:'Input2'} ,
           {placeholder:'Days',type:'Number',value:'',
-              required:true} ,
+              required:true,classNameLabel:'Days',className:'Input3'} ,
           {placeholder:'Place',type:'text',value:'',
-              required:true} ,
+              required:true,classNameLabel:'Place',className:'Input4'} ,
         ]
     }
     changeHandler=(e,i)=>{
       const PseudoInput=[...this.state.inputdetails];
-  
-      
           PseudoInput[i].value=e.target.value
-        //  console.log(PseudoInput);
-         this.setState({
-  
-             PseudoInput
-          }
-              )
-          
-      }
+    
+         this.setState({PseudoInput}) }
       addTrip=()=>{
           const data= {
-  
       Person:this.state.inputdetails[0].value,
       Date:this.state.inputdetails[1].value,
       days:this.state.inputdetails[2].value,
@@ -61,19 +52,31 @@ class   inputDiv       extends Component{
           traveller=<Bus/>
       }
       else{
-          traveller=<p> book your drive </p>
+          traveller=<p>  </p>
       }
 return(
 
     <div className='Div'>
 {traveller}
+<p className='para'> Get on a road Trip </p>
+<span>
+   Now in just few seconds
+</span>
+<br/>
+<br/>
+<br/>
+<div style={{textAlign:"center"}}>
+
  { this.state.inputdetails.map((items,index)=>{
-     return <div key={items.placeholder}> <Input  placeholder={items.placeholder} 
+     return <div key={items.placeholder} > 
+     <label className={items.classNameLabel} >{items.placeholder}</label> <br/>
+     <Input  placeholder={items.placeholder}  className={items.className}
      type={items.type} required= {items.required}
      onChange={(e)=> this.changeHandler(e,index)   } /> <br/> </div>
     })}
- <button onClick={this.addTrip}>  Add trip</button>
+ <button onClick={this.addTrip} className='AddTrip'>  Add trip</button>
  
+    </div>
     </div>
 )}
 }

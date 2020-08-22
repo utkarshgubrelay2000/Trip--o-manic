@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import './Auth.css'
-import SignUp from './SignUP/Signup'
-import Login from './Login/Login'
+
+
+const Login=React.lazy(()=>import ('./SignUP/Signup'))
+const SignUp=React.lazy(()=>import ('./Login/Login'))
 class Auth extends Component {
     state = {
         toggle: true,

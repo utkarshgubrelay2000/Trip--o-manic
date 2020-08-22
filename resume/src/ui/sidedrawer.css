@@ -8,20 +8,17 @@
     .imageDiv{
         width: 23vh;
         height: 18vh;
-        background-color: black;
+        
         position: relative;
-        top: 14vh;
+        top: 9vh;
         left: 9vh;
         z-index: -2;
         text-align: -webkit-center;
     }
 img{
-    width: 20vh;
-    height: 15vh;
-    padding: .5vh;
-
-    position: relative;
-    top: 1vh;
+    width: 32vh;
+    height: 30vh;
+   
 }
 .span{
     font-family: cursive;
@@ -60,4 +57,7 @@ img{
         transform: translate(-100%);
         opacity: 0;
     }
+}
+@media (min-width:805px){
+    .sidedrawer{display: none;}
 }

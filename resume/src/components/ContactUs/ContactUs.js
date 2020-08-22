@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Head from './head/head'
-import Body from './body/body'
 
+const Head=React.lazy(()=>import ('./head/head'))
+const Body=React.lazy(()=>import ('./body/body'))
 class Contact extends Component{
     render(){
         return (
