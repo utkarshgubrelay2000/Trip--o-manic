@@ -3,11 +3,8 @@ import "./nav.css"
 function   NavigationItems (props){
    return(
 
-    <div className={props.className} >
-    
-    
-            {props.children}
-        
+    <div className={props.className} >      
+     {props.children}
     </div>
    ) 
 }

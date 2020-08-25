@@ -1,10 +1,8 @@
 import React,{Component} from 'react'
 import  './l.css'
-const  InputDiv=React.lazy(()=>import ('../../components/layout/inputDiv/inputDiv'))
+import  InputDiv from  '../../components/layout/inputDiv/inputDiv'
 const  Body=React.lazy(()=>import ('../../components/layout/body/body'))
 const Header=React.lazy(()=>import ('../../components/layout/navbarr/nav'))
-
-
 class    Layout  extends Component{
 
     state={
@@ -18,6 +16,7 @@ class    Layout  extends Component{
      return(
          <div>
 
+         <div>
 <div  style={{position:'relative'}}>
  <Header />
      <Body />
@@ -27,8 +26,11 @@ class    Layout  extends Component{
  </button>
  {this.state.bookTrip?
  <InputDiv/>:null
-}
-    </div>
+} 
+
+ </div>
+
+ </div>
  
 )}
 }

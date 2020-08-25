@@ -2,11 +2,28 @@
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 80%;
     margin: auto;
-    
     position: relative;
-    top: -5vh;
-    background: linear-gradient(219.04deg, #191A4C 22.92%, #2B4477 58.88%, #707EC2 72.57%, #ADB2CD 77.61%);
+
     height: 99vh;
+    
+}
+h1{
+    
+    margin: auto;
+    padding: 33%;
+    font-size: 249%;
+    color: black;
+}
+.outerDiv{
+    width: 93%;
+    height: 100%;
+    background: url('../../../Images/pexels-mike-andrei-1271619.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 4%;
+    position: relative;
+    top: -15vh;
 }
 .para{
     position: relative;
@@ -15,12 +32,12 @@
 }
 span{
     position: relative;
-    left: -23%;
-    font-size: 2vh;
+    left: -25%;
+    font-size: 70%;
 }
 .Person{
     position: relative;
-   
+    
     padding: 1vh;
     font-size: 132%;
     top: 5vh;
@@ -28,19 +45,22 @@ span{
 }
 .Date{
     position: relative;
+    left: -0%;
     margin: 20px;
-
+    
     font-size: 132%;
     top: 13vh;
 }
 .Days{
     position: relative;
+    left: -0%;
     margin: 20px;
     padding: 1vh;
     font-size: 132%;
     top: 20vh;
 }
 .Place{
+    left: -0%;
     position: relative;
     margin: 20px;
     padding: 1vh;
@@ -83,4 +103,53 @@ span{
     background-color: rgba(0, 0, 0, 0);
     border: 3px solid black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Div2{
+    display: none;
+    position: relative;
+    border-radius: 19vh;
+    margin: 0;
+    width: 44%;
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       text-align: center;
+  height: 99vh;
+}
+@media (min-width:900px){
+    .para{
+       left: 25%;
+    font-size: 130%;
+    }
+span{
+    left: 22%;
+    font-size: 100%;
+}
+.Div{
+    border-radius: 19vh;
+    margin: auto;
+    width: 44%;
+   height: 100vh;
+   
+}
+.Div2{
+    display: inline;
+    
+}
+.outerDiv{
+    display: inline-flex;
+    margin: auto;
+    position: relative;
+    top: -17vh;
+}
+.AddTrip{
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 7vh;
+    border-radius: 2vh;
+}
+.Input1,.Input2,.Input3,.Input4{
+    height: 6vh;
+    border-radius: 1vh;
+}
 }

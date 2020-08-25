@@ -20,7 +20,7 @@ class Auth extends Component {
             <h2 className='signUp'>
                 {this.state.toggle ? "SignUp" : "Login"}
             </h2>
-            {this.state.toggle ?
+            {!this.state.toggle ?
                 <SignUp renderHandler={this.renderHandler} /> :
                 <Login renderHandler={this.renderHandler} />
             }

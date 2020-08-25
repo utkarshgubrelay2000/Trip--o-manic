@@ -6,11 +6,12 @@
 .inputDiv{
     border: black 9px solid;
     width: 70%;
+    height: 100%;
     padding: 10px;
     margin: auto;
     text-align: center;
     position: relative;
-    top: 10vmin;
+    top: 4vh;
 }
 .kindly{
     position: relative;
@@ -18,60 +19,114 @@
    
     font-size: 3vw;
 }
-.labelDiv{
-    color: black;
-    display: grid;
-    text-align: left;
-    font-size: 4vw;
-    margin: 8%
+.button{
+    position: relative;
+top: -14vw;
+    width: 30%;
+    height: 6vh;
+    border: black solid 3px;
+    border-radius: 18vh;
+    background-color: revert;
+    font-family: monospace;
+    font-size: 2.5vh;
 }
-label{
-    font-weight: 900;
-    font-family: 'Gill Sans';
-margin: 5%;
+    label {
+        font-weight: 900;
+        font-family: 'Gill Sans';
+        margin: 13%;
+        display: flow-root;
+        padding: 10%;
+        font-size: 150%;
+    }
+
+
+
+.input3{
+    position: relative;
+top: -34vw;
+    width: 80%;
+    height: 5vh;
+    color: black;
+    background-color: rgba(26, 110, 188, 0.34);
+    border: black 4px groove;  
+    border-radius: 2vh;
+    font-size: 100%;
 }
 .input{
+    font-size: 100%;
+    position: relative;
+    border-radius: 2vh;
+    width: 80%;
+    height: 5vh;
+    color: black;
+    background-color: rgba(26, 110, 188, 0.34);
+    border: black 4px groove;  
+    top: -67vw;
+}
+span{
+    font-size: 177%;
+    color: red;
     position: absolute;
-    top: 36%;
-    width: 34%;
-    height: 6%;
-    left: 45%;
-    background-color: darkgray;
-    border-radius: 3vh;
+    top: 55vh;
+    margin: 9vw;
+   
 }
 .input2{
-    position: absolute;
-    top: 54%;
-    width: 34%;
-    height: 6%;
-    left: 45%;
-    background-color: darkgray;
-    border-radius: 3vh;
+    font-size: 100%;
+    position: relative;
+    top: -52vw;
+    width: 80%;
+    height: 5vh;
+    color: black;
+    background-color: rgba(26, 110, 188, 0.34);
+    border: black 4px groove;  
+    border-radius: 2vh;
 }
-.input3{
-    position: absolute;
-    top: 72%;
-    width: 34%;
-    height: 6%;
-    left: 45%;
-    background-color: darkgray;
-    border-radius: 3vh;
 
-}
 .inputFocus{
     border: brown 3px solid;
 }
-@media (min-width:1000px){
+
+@media (min-width:700px){
+    .inputDiv{
+        width: 70%;
+    }
+    .input2{
+        top: -48vw;
+    }
+    .input3{
+        top: -24vw;
+    }
+    label{
+        font-size: 200%;
+    }
+    span{
+       top: 70vh;
+       margin: 10vw;
+    }
+}
+@media (min-width:1200px){
     .inputDiv{
         width: 60%;
     }
-}
-.button{
-    width: 24%;
-    height: 5vh;
-    border: black solid 3px;
-    border-radius: 20vh;
-    background-color: revert;
-    font-family: monospace;
-    font-size: 2vh
+    .input2{
+        top: -20vw;
+    }
+    .input{
+        top: -28vw;
+    }
+    .input3{
+        top: -10vw;
+    }
+    label{
+        font-size: 300%;
+        margin: 11%;
+        padding: 1%;
+    }
+    .button{
+        top: -4vw;
+    }
+    span{
+        padding: 9vw;
+    }
 }

@@ -114,13 +114,8 @@ axios.post('https://trip-o-manic.firebaseio.com/contact-us.json',data).then(r=>{
     </div>
  <div className="inputSection">
      <form >
-
     {InputItems.map((items,index)=>{
-        return <div key={items.placeholder+items.type}> <span style={{
-            position: "absolute",            top: "29%",            fontSize:" 95%",
-            color:'red'
-        }}>
-
+        return <div key={items.placeholder+items.type}> <span>
 {items.error}
         </span>
         <Input  placeholder={items.placeholder} 

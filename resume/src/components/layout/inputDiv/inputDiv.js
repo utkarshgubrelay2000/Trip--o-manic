@@ -1,12 +1,11 @@
 import React,{Component} from 'react'
 import './inputDIV.css'
-import Bus from '../../bus/bus'
-import Car from '../../car/car'
 import Input from '../../../ui/input'
 import axios from 'axios'
+import { Redirect } from 'react-router-dom'
+
 class   inputDiv       extends Component{
     state={
-     
         inputdetails:[
           {placeholder:'No of Person',type:'Number',value:0,
               required:true,classNameLabel:'Person',className:'Input1'} ,
@@ -18,6 +17,7 @@ class   inputDiv       extends Component{
               required:true,classNameLabel:'Place',className:'Input4'} ,
         ]
     }
+   
     changeHandler=(e,i)=>{
       const PseudoInput=[...this.state.inputdetails];
           PseudoInput[i].value=e.target.value
@@ -44,27 +44,31 @@ class   inputDiv       extends Component{
      }
   render(){
      
-      let traveller;
-      if(this.state.inputdetails[0].value>0&&this.state.inputdetails[0].value<5){
-          traveller=<Car/>
-      }
-      else   if(this.state.inputdetails[0].value>4){
-          traveller=<Bus/>
-      }
-      else{
-          traveller=<p>  </p>
-      }
+   let token=localStorage.getItem('token');
+   let InputDivision;
+   if(token){
+InputDivision=<Redirect to="/Auth"/>
+   }
+   else{
+       InputDivision=''
+   }
 return(
+    <div className='outerDiv'>
+    <div className='Div2'>
+
+      <h1>
+      We travel not to escape life but for life not to escape us.   
+          </h1>  
+ 
+    </div>
 
     <div className='Div'>
-{traveller}
+    {InputDivision}
 <p className='para'> Get on a road Trip </p>
 <span>
    Now in just few seconds
 </span>
-<br/>
-<br/>
-<br/>
+
 <div style={{textAlign:"center"}}>
 
  { this.state.inputdetails.map((items,index)=>{
@@ -76,6 +80,7 @@ return(
     })}
  <button onClick={this.addTrip} className='AddTrip'>  Add trip</button>
  
+    </div>
     </div>
     </div>
 )}
