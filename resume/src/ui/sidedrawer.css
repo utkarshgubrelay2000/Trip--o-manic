@@ -4,6 +4,7 @@
         width: 71%;
         height: 100vh;
         position: fixed;
+        z-index: 1;
     }
     .imageDiv{
         width: 23vh;

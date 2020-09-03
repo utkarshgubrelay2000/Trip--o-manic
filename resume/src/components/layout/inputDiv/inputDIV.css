@@ -3,12 +3,11 @@
     width: 80%;
     margin: auto;
     position: relative;
-
+background: linear-gradient(rgba(0,0,256,.5), rgba(25, 160, 238, .5)) ;
     height: 99vh;
     
 }
 h1{
-    
     margin: auto;
     padding: 33%;
     font-size: 249%;
@@ -24,16 +23,19 @@ h1{
     padding: 4%;
     position: relative;
     top: -15vh;
+    text-align: center;
 }
 .para{
     position: relative;
-    margin: auto;
-    left: -25%;
+  left: -13%;
+    font-size: 3vh;
+   
+    
 }
 span{
     position: relative;
-    left: -25%;
-    font-size: 70%;
+  font-size: 2.5vh;
+  
 }
 .Person{
     position: relative;
@@ -87,7 +89,6 @@ span{
 .Input2,.Input3,.Input4{
     background: #ACB4F8;
     position: relative;
-    
     width: 69%;
     height: 4.5vh;
     border-radius: 4vh;
@@ -117,11 +118,11 @@ span{
 }
 @media (min-width:900px){
     .para{
-       left: 25%;
+       left: 5%;
     font-size: 130%;
     }
 span{
-    left: 22%;
+   
     font-size: 100%;
 }
 .Div{
@@ -151,5 +152,8 @@ span{
 .Input1,.Input2,.Input3,.Input4{
     height: 6vh;
     border-radius: 1vh;
+}
+.Div{
+    background: rgba(0, 0, 0, 0);
 }
 }

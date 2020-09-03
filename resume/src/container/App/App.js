@@ -2,8 +2,8 @@ import React,{Suspense} from 'react';
 import {Route,Switch} from 'react-router-dom'
 import './App.css';
 
+import   Contact from '../../components/ContactUs/ContactUs'
 const Layout = React.lazy(() => import('../Layout/layout'));
-const  Contact=React.lazy(()=>import ('../../components/ContactUs/ContactUs')) 
 const  Summary=React.lazy(()=>import  ('../../components/Summary/summary')) 
 const  Logout=React.lazy(()=>import  ('../../components/logout/logout')) 
 const Auth = React.lazy(()=> import ('../Auth/Auth'))

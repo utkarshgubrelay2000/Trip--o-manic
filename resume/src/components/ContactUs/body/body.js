@@ -11,7 +11,7 @@ const Body=()=>{
             length:8
         },
         value:'',
-        error:null
+        
     },
     {placeholder:'Phone no.',type:'number',className:'input2',rules:{
         required:true,
@@ -19,16 +19,18 @@ const Body=()=>{
         length:8
     },
     value:'',
-    error:null
+    
 },
 {placeholder:'Email',type:'text',className:'input3',rules:{
     required:true,
     submitable:false,
-    length:8
+    length:0,
+    valid:""
 },value:'',
-error:null
+
     },
     ])
+    const [error,seterror]=useState(null)
     const ChangeHandler=(e,i)=>{
 //console.log(i);
 const PseudoInput=[...InputItems];
@@ -44,28 +46,54 @@ validation(e,i)
 }
 const [buttonsubmission,setbuttonSubmission]=useState(true)
 const validation=(e,i)=>{
-  //  console.log('validation',e.target.value);
-    
+  //  console.log('validation',e.target.value);   
   const PseudoInput=[...InputItems]
-if(e.target.value.length>InputItems[i].rules.length){
-  //  console.log('k');
-    
-  PseudoInput[i].error=null
-    PseudoInput[i].rules.submitable=true
-    setInputItems(PseudoInput)
+  if(e.target.value.length>InputItems[i].rules.length){
+      //  console.log('k'); 
+      if(InputItems[2]===PseudoInput[i]){
+        emailValidator(e,i)      
+  }
+  else{
+
+      seterror(null)
+      PseudoInput[i].rules.submitable=true
+      setInputItems(PseudoInput)
+    }
 }
+
 else{
-    
-    PseudoInput[i].error='length is short'
+        
+    seterror('Length is Short')  
     PseudoInput[i].rules.submitable=false
     setInputItems(PseudoInput)
     
+    
 }
 
-    if(InputItems[0].rules.submitable&&InputItems[1].rules.submitable&& InputItems[2].rules.submitable){
+
+if(InputItems[0].rules.submitable&&InputItems[1].rules.submitable&& InputItems[2].rules.submitable){
         setbuttonSubmission(false)
     }
-
+    
+}
+const emailValidator=(e,i)=>{
+    const regEx=/@gmail.com$/
+    let s= e.target.value
+    let  PseudoInput=[...InputItems]
+   // console.log(regEx.exec(s));
+ 
+       if(!regEx.exec(s)){
+        console.log(regEx.exec(s),'inside');
+        seterror(" Email is invalid ")
+        PseudoInput[2].rules.submitable=false;
+    } 
+    else{
+        PseudoInput[2].rules.submitable=true;
+            seterror(null)
+    }
+    setInputItems(PseudoInput)
+    
+      
 }
     useEffect(()=>{
         for(let value of InputItems)
@@ -101,27 +129,25 @@ axios.post('https://trip-o-manic.firebaseio.com/contact-us.json',data).then(r=>{
  }}> We Will Contact  you Shortly</h1> 
 <h3 className='kindly'>
     Kindly Fill ups the details </h3>
-    <div className="labelDiv">
-       <label>
-           Name:
-           </label> 
-       <label>
-           Phone no.:
-           </label> 
-       <label>
-           Email:
-           </label> 
-    </div>
+    
  <div className="inputSection">
      <form >
     {InputItems.map((items,index)=>{
-        return <div key={items.placeholder+items.type}> <span>
-{items.error}
-        </span>
+        return <div key={items.placeholder+items.type} className='divisioncontact'> 
+        <label>
+        {items.placeholder}
+           </label> 
         <Input  placeholder={items.placeholder} 
         className={items.className} required= {items.rules.required}
           onChange={(e)=> ChangeHandler(e,index)   } />
  </div>   })}
+ <span>
+
+    <span>
+    {error}
+            </span>
+  
+        </span>
     <button type="submit" className='button'onClick={SubmitDetails} disabled={buttonsubmission} > Submit </button>
     </form>
  </div>
