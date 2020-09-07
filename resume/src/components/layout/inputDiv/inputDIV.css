@@ -3,104 +3,113 @@
     width: 80%;
     margin: auto;
     position: relative;
-background: linear-gradient(rgba(0,0,256,.5), rgba(25, 160, 238, .5)) ;
-    height: 99vh;
+
+height: 110vh;
+margin: auto;
+  text-align: center;
+ background-color:rgb(184,182,192)
+ ;
+    z-index: 28;
     
+    box-shadow: 11px 2vh 3vh 3vh rgba(0,0,0,0.7);
 }
 h1{
     margin: auto;
-    padding: 33%;
-    font-size: 249%;
+    text-align: center;
     color: black;
+    font-size: 249%;
+  
+    z-index: 28;
+    border-radius: 19vh;
+    height: 63vh;
+    padding: 18vh;
 }
 .outerDiv{
     width: 93%;
     height: 100%;
-    background: url('../../../Images/pexels-mike-andrei-1271619.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+   
     padding: 4%;
     position: relative;
-    top: -15vh;
+    background-color:rgb(34,29,59);
     text-align: center;
 }
 .para{
     position: relative;
-  left: -13%;
-    font-size: 3vh;
-   
-    
+    color: white;
+    font-size: 130%;    
 }
-span{
+.Now{
     position: relative;
-  font-size: 2.5vh;
+    font-size: 2.5vh;
+    top: 0;
+  color: white;
   
 }
 .Person{
     position: relative;
     
-    padding: 1vh;
     font-size: 132%;
-    top: 5vh;
-    left: -0%;
+    
 }
 .Date{
     position: relative;
     left: -0%;
-    margin: 20px;
+    
     
     font-size: 132%;
-    top: 13vh;
+    
 }
 .Days{
     position: relative;
     left: -0%;
-    margin: 20px;
-    padding: 1vh;
+    
+    
     font-size: 132%;
-    top: 20vh;
+    
 }
 .Place{
     left: -0%;
-    position: relative;
-    margin: 20px;
-    padding: 1vh;
+    position: relative;  
     font-size: 132%;
-    top: 28vh;
 }
-.Input4{
-    top: 30vh;
+.Person,.Place,.Date,.Days,.Input1,.Input2,.Input3,.Input4{
+    padding: 1vh;
+    margin: .8vh;
+    
 }
 .Input1{
-    background: #ACB4F8;
+    
     position: relative;
-    top: 7vh;
+    color:#57565b ;
     width: 69%;
     height: 4.5vh;
     border-radius: 4vh;
-}
-.Input2{
-    top: 14vh;
-}
-.Input3{
-    top: 23vh;
-}
-.Input2,.Input3,.Input4{
-    background: #ACB4F8;
-    position: relative;
-    width: 69%;
-    height: 4.5vh;
-    border-radius: 4vh;
+    background:#84838b;
 }
 
+.Input2,.Input3,.Input4{
+    color:#57565b ;
+    background: #84838b;
+    position: relative;
+    width: 69%;
+    height: 4.5vh;
+    border-radius: 4vh;
+    font: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.divison{
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+}
 .AddTrip{
     width: 51%;
     position: relative;
-    top: 35vh;
-    height: 5vh;
+    
+    height: 6vh;
     font-size: 3vh;
-    left: -2%;
+    
     background-color: rgba(0, 0, 0, 0);
     border: 3px solid black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -108,52 +117,37 @@ span{
 .Div2{
     display: none;
     position: relative;
+    box-shadow: 11px 2vh 3vh 3vh rgba(0,0,0,0.7);
     border-radius: 19vh;
     margin: 0;
     width: 44%;
     height: 100vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-       text-align: center;
-  height: 99vh;
+    text-align: center;
+    height: 99vh;
 }
 @media (min-width:900px){
-    .para{
-       left: 5%;
-    font-size: 130%;
-    }
-span{
-   
-    font-size: 100%;
-}
-.Div{
-    border-radius: 19vh;
-    margin: auto;
-    width: 44%;
-   height: 100vh;
-   
-}
-.Div2{
-    display: inline;
+    
+    .Div{
+        
+        margin: auto;
+    width: 60%;
+    height: 100vh;
     
 }
+
 .outerDiv{
     display: inline-flex;
     margin: auto;
     position: relative;
-    top: -17vh;
+   
 }
-.AddTrip{
-    background-color: rgba(0, 0, 0, .8);
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 7vh;
-    border-radius: 2vh;
+
+.para{
+    left: 0;
 }
 .Input1,.Input2,.Input3,.Input4{
-    height: 6vh;
-    border-radius: 1vh;
-}
-.Div{
-    background: rgba(0, 0, 0, 0);
+    width: 40%;
+    border-radius: 0;
 }
 }

@@ -3,198 +3,97 @@
     margin: 0;
 }
 .authDiv{
-    background-color:#8027ea;
-
-    height: 150vh;
-    
+    background:radial-gradient(rgba(34,29,59),rgb(0,0,0));
+    height: 100vh;
+text-align: center;
+font-family: 'Open Sans', sans-serif;
 }
 .middleDiv{
-   width: 80%;
- height: 90vh;
+   width: 60%;
+ height: 56vh;
 margin: auto;
 background-color: #C4C4C4;
 border-radius: 50px;
-margin-top: 8vh;
+margin-top: 2vh;
 }
 
 .signUp{
-    position: relative;
-    left: 28%; 
-    font-family: Kreon;
-    font-style: normal;
-    font-size: 200%;
-    color: #000000;
+    font-size: 8vh;
+    color: darkgray;
+    padding: 4vh;
+    /* box-shadow: 24px 38px black; */
+    text-shadow: 28px 24px black;
+    opacity: .4;
 }
-
-.loginpassword{
-    
-    font-family: Kreon;
-    position: relative;
-    left: 14%;
-    top: 26vh;
-    font-size: 190%;
-    
+.inputType{
+    width: 27vh;
+    height: 3vh;
+    background-color: rgb(118,116,127)    ;
+    color: white;
 }
-.loginname{
-    font-family: Kreon;
-    position: relative;
-    left: 14%;
-    top: 17vh;
-    font-size: 190%;
-    font-family: Kreon;
-    
-}
-
-.loginInputUsername{
-    position: relative;
-    left: 9%;
-    top: 21vh;
-    width: 72%;
-    height: 7vh;
-    border-radius: 20px;
-    font-family: kreon;
-    font-size: 3vh;
-    text-align: start;
-}
-.loginInputPassword{
-    position:relative;
-    left: 9%;
-    top: 28vh;
-    width: 72%;
-    height: 7vh;
-    border-radius: 20px;
-    font-family: kreon;
-    font-size: 3vh;
-    text-align: start;
-}
-
-
 .ButtonLogin{
+    background-color:rgb(82,80,94);
+    color: rgb(190,188,199);
+    width: 27vh;
+    text-align: center;
     
-position: relative;
-width: 23vh;
-height: 8vh;
-left: 14%;
-top: 31vh;
-background: linear-gradient(91.79deg, #8027EA 9.13%, rgba(14, 2, 28, 0.72) 96.72%);
-    border-radius: 69px;
-    border: black 2px solid;
-    font-size: 3vh;
-    font-family: kreon;
-    font-weight: 900;
+    height: 4vh;
+    font-size: 1.5vh;
+    margin-top: 2vh;
+}
+
+.signUpdiv{
+    text-align: left;
+    padding: 2vh;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .AccountLogin{
-    position: absolute;
-    width: 71%;
-    height: 73px;
-    left: 20%;
-    top: 86%;
-    font-family: Kreon;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 3vh;
-    line-height: 25px;
-    color: #000000;
+    font-size: 2vh;
+    color: rgb(151,142,162);
+    position: relative;
+    
+    padding: 4vh;
+    left: 0;
 }
 .Authhandler{
-    position: absolute;
-    font-family: Kreon;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 3vh;
+    height: 5vh;
+    padding: 0vh;
     margin: 3vh;
-    width: 29vw;
-    height: 6vh;
-    
-        background: linear-gradient(91.79deg, #8027EA 9.13%, rgba(14, 2, 28, 0.72) 96.72%);
-        border-radius: 69px;
-    }
-@media (min-width:700px){
-    
-            .loginname{
-                left: 17vw;
-                top: 17vh;
-                font-size: 6vw;
-            }
-         
-            .loginInputUsername,.loginInputPassword{
-                height: 8vh;
-            }
-            
-            .signUp{
-                left: 39%;
-                font-size: 350%;
-            }
-            .loginpassword{
-                left: 17vw;
-    top: 27vh;
-    font-size: 7vw;
-            }
-           
-           
-        
-            .middleDiv{
-                width: 70%;
-            }
+    width: 15vh;
+    background-color:rgb(82,80,94);
+    color: rgb(190,188,199);
 }
-@media (min-width:900px){
-   
-    
-    .loginpassword,.loginname{
-        top: 10vh;
+.Authhandler:hover,.ButtonLogin:hover{
+  color:rgb(82,80,94);
+    background-color: rgb(190,188,199);
+
+}
+@media (min-width:700px){
+    .inputType{
+        width: 30vh;
     }
-    .loginInputUsername,.loginInputPassword{
-        top: 10vh;
-        margin: 3vh;
-    }
-    
-    .ButtonLogin{
-        top: 15vh;
-    }
-    
-    .AccountLogin{
-        position: relative;
-        top: 20vh;
-        left: 20%;
+    .signUpdiv{
+        text-align: center;
     }
 }
 @media (min-width:1200px){
-    
- .loginpassword,   .loginname{
-    top: 14vh;
-    font-size: 5vw;
-    left: 20%;
-}
-
-    .loginInputUsername,.loginInputPassword{
-        top: 14vh;
-        height: 8vh;
-    border-radius: 46px;
-    margin: 2vh;
+    .inputType{
+        width: 50vh;
+        height: 5vh;
     }
-   
-    .AccountLogin{
-        left: 30%;
-        font-size: 200%;
-    }
-   
     .middleDiv{
-        height: 98vh;
-        border-radius: 100px;
-        width: 60%;
+      
+        width: 90vh;
+        
     }
-    .signUp{
-        left: 40%;
+    .signUpdiv{
+        text-align: center;
     }
     .ButtonLogin{
-        top: 15vh;
-        left: 30%;
+        font-size: 3vh;
+        height: 5vh;
+        width: 50vh;
     }
-    
-    .AccountLogin{
-        position: relative;
-        top: 20vh;
-        left: 20%;
-    }
+   
 }

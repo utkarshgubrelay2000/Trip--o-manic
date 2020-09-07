@@ -1,118 +1,93 @@
-*{
-    margin: 0;
-    padding: 0;
+.outerDiv{
+    background-color: white;
 }
-.body{
-z-index: -1;
-    position: fixed;
-    width: 100%;
-    height: 100%;
+
+.upperDiv{
+    position: relative;
+    background: #5D66B9;
+    height: 30vh;
+    border-radius: 0 0 17vh 17vh;
+    text-align: center;
+    float: inline-start;
+}
+.back{
+    position: relative;
+    background: #5D66B9;
+    height: 4vh;
+    text-align: center;
+    float: inline-end;
+    width: 24%;
+    left: 24%;
+    margin: 8%;
+    font-family:Showcard Gothic ;
+text-decoration: none;
+color: white;
+padding: 4%;
+font-size: 4vh
+;
+}
+.logged{
+position: relative;
+background: #5D66B9;
+height: 1vh;
+
+    float: inline-end;
+  
+ 
+   font-size: 4vh;
+   text-decoration: none;
+   color: white;
+padding: 3%;
+top: 22vh;
+}
+.innerDiv{
+    font-family: monospace;
+    font-size:4vh;
+   
+    color: black;
+    padding: 2%;
+}
+.H1{
+    color: white;
+    font-size: 20vw;
+    padding: 4vh;
+    font-family:Showcard Gothic ;
+}
+span{
+    color: black;
 }
 .box{
     position: relative;
-    margin: 3% auto 0 auto;
-
-    top: 10vh;
-    
-    width: 74%;
-    background: linear-gradient(92.7deg, #A1FBFB 17.68%, rgba(182, 241, 209, 0) 52.25%);
-    border: 4px solid #000000;
-    height: 32vh;
-    border-radius: 5vw;
-}
-.H1{
-position:relative;
-
-left:30%;
+    height: 59vh;
+   background-color: white;
+    box-shadow: 6px 6px 54px #5D66B9;
+    width: 65%;
+    margin-left: 17%;
+    margin-top: 27px;
 
 }
-.Place{
-
-    position: absolute;
-   
-    left: 13%;
-    
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 3vh;
-   top: 15%;
-color: #000000;
-}
-.Persons{
-    position: absolute;
-    left: 13%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 3vh;
-    color: #000000;
-    top: 55%;
-
-}
-.Days{
-    position: absolute;
-    left: 64%;
-    top: 15%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 3vh;
-    
-    color: #000000;
-}
-.Date{
-   
-    position: absolute;
-    left: 64%;
-    
-    top:55%;
-    
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 3vh;
-color: #000000;
-}
-.booking{
-   
-    position: absolute;
-    top: 8%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.7vh;
-    color: #000000;
-    left: 80%;
+.bottomDIv{
+    margin-bottom:10px ;
 }
 .more{
+    font-size: 3vh;
+}
+@media (min-width:1200px){
     
-    position: absolute;
-    width: 100%;
-    left: 74%;
-    top: 74%;
-    font-family: cursive;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.90vh;
-cursor: pointer;
-    color: rgba(10, 22, 63, 0.88);
-}
-@media (max-width:400px){
-    .more{
-        left: 28%;
-    top: 80%;
-    }
-    .booking{
-        left: 5%;
-    }
     .H1{
-        font-size: 3vh;
-        margin-left: -18%;
+        padding: 0;
+        font-size: 15vw;
+        
     }
-    .box{
-        margin-left: 6%;
-    margin-top: 3%;
+  .back{
+      height: 3vh;
+  }
+ 
+  .box{
+    width: 40%;
+    left: 0;
+    margin: 3% auto;
+   
+    padding: 3%;
+  }
 }
-    }
-

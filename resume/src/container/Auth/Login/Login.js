@@ -10,8 +10,8 @@ class Login extends Component {
 
     state = {
         Login: [
-            { placeholder: 'UserName', type: 'text', className: 'loginInputUsername', label: 'loginname', value: '' },
-            { placeholder: 'Password', type: 'Password', className: 'loginInputPassword', label: 'loginpassword', value: '' },
+            { placeholder: 'UserName', type: 'text', className: 'inputType', value: '' },
+            { placeholder: 'Password', type: 'Password', className: 'inputType',  value: '' },
 
         ],
         error: null,
@@ -42,7 +42,7 @@ class Login extends Component {
                         <div>
                             {this.state.Login.map((items, i) => {
                                 return (
-                                    <div key={items.placeholder} > <label className={items.label}>
+                                    <div key={items.placeholder} className='signUpdiv' > <label >
                                         {items.placeholder}
                                     </label>
                                         <Input onChange={(e) => this.ChangeHandler(e, i)} className={items.className} required type={items.type} placeholder={items.placeholder} />
@@ -54,10 +54,11 @@ class Login extends Component {
     </button>
                         </div>}
                     <span className='AccountLogin'>
-                        Don't have a account Create <br /> <button className='Authhandler' onClick={this.props.renderHandler}>
+                        Don't have a account Create 
+                    </span>
+                        <button className='Authhandler' onClick={this.props.renderHandler}>
                             SignUp
        </button>
-                    </span>
                 </div>}
         </>
         )

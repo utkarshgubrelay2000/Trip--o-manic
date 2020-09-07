@@ -9,7 +9,7 @@ body{
     text-align: center;
     font-size: 158%;
     position: relative;
-    top: -14vh;
+   margin-top: -7vh;
     background-color: rgba(0,0,0,0);
   
     float: left;
@@ -20,7 +20,7 @@ body{
     .buttonBook{
         height: 93%;
         font-size: 197%;
-        top: -45vh;
+      margin-top: -45vh;
         float: left;
         left: 7%;
         border: 9px solid black;

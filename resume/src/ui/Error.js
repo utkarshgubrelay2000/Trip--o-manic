@@ -6,8 +6,8 @@ function  Error (props){
   }}>
       <div className='Error'>
 
- <h2>Something went wrong</h2>
-<h3> {props.errorMessage}</h3>
+ <h6>Something went wrong</h6>
+<h5> {props.errorMessage}</h5>
       </div>
 <div className="main">
         <div className="shadow-wrapper">

@@ -4,6 +4,7 @@ import Input from '../../../ui/input'
 import axios from 'axios'
 import { Redirect } from 'react-router-dom'
 
+
 class   inputDiv       extends Component{
     state={
         inputdetails:[
@@ -19,12 +20,14 @@ class   inputDiv       extends Component{
     }
    
     changeHandler=(e,i)=>{
-      const PseudoInput=[...this.state.inputdetails];
-          PseudoInput[i].value=e.target.value
-    
-         this.setState({PseudoInput}) }
-      addTrip=()=>{
+        const PseudoInput=[...this.state.inputdetails];
+        PseudoInput[i].value=e.target.value
+        
+        this.setState({PseudoInput}) }
+        addTrip=()=>{
+            let  currentuser=localStorage.getItem('user')
           const data= {
+              User:currentuser,
       Person:this.state.inputdetails[0].value,
       Date:this.state.inputdetails[1].value,
       days:this.state.inputdetails[2].value,
@@ -32,13 +35,13 @@ class   inputDiv       extends Component{
       Bookingdate:new Date(),
           }
           
-          console.log(data);
+    
           
           axios.post('https://trip-o-manic.firebaseio.com/Trip.json',data).then(r=>{
-              console.log(r);
+           //   console.log(r);
               
           }).catch(err=>{
-              console.log(err);
+             // console.log(err);
           })
           
      }
@@ -46,7 +49,7 @@ class   inputDiv       extends Component{
      
    let token=localStorage.getItem('token');
    let InputDivision;
-   if(token){
+   if(!token){
 InputDivision=<Redirect to="/Auth"/>
    }
    else{
@@ -54,25 +57,19 @@ InputDivision=<Redirect to="/Auth"/>
    }
 return(
     <div className='outerDiv'>
-    <div className='Div2'>
-
-      <h1>
-      We travel not to escape life but for life not to escape us.   
-          </h1>  
- 
-    </div>
+   
 
     <div className='Div'>
     {InputDivision}
 <p className='para'> Get on a road Trip </p>
-<span>
+<span className='Now'>
    Now in just few seconds
 </span>
 
 <div style={{textAlign:"center"}}>
 
  { this.state.inputdetails.map((items,index)=>{
-     return <div key={items.placeholder} > 
+     return <div key={items.placeholder} className='division' > 
      <label className={items.classNameLabel} >{items.placeholder}</label> <br/>
      <Input  placeholder={items.placeholder}  className={items.className}
      type={items.type} required= {items.required}

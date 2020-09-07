@@ -11,8 +11,8 @@ class Signup extends Component {
     state = {
         SignUp: {
             input: [
-                { placeholder: 'UserName', type: 'text', className: 'loginInputUsername', label: 'loginname', value: '' },
-                { placeholder: 'Password', type: 'Password', className: 'loginInputPassword', label: 'loginpassword', value: '' },
+                { placeholder: 'UserName', type: 'text', className: 'inputType', value: '' },
+                { placeholder: 'Password', type: 'Password', className: 'inputType', value: '' },
             ]
         },
 
@@ -38,8 +38,8 @@ class Signup extends Component {
                     {this.props.loading ? <Spinner /> :
                         <div>
                             {this.state.SignUp.input.map((items, i) => {
-                                return (<div key={items.placeholder}>
-                                    <label className={items.label}>
+                                return (<div key={items.placeholder} className='signUpdiv'>
+                                    <label >
                                         {items.placeholder}
                                     </label>
                                     <Input type={items.type} required placeholder={items.placeholder} className={items.className} onChange={(e) => this.ChangeHandler(e, i)} />
@@ -52,10 +52,11 @@ class Signup extends Component {
         </button>
                         </div>}
                     <span className='AccountLogin'>
-                        Already have a account  <br /> <button className='Authhandler' onClick={this.props.renderHandler} >
+                        Already have a account 
+                    </span>
+                          <button className='Authhandler' onClick={this.props.renderHandler} >
                             Login
             </button>
-                    </span>
                 </div> : <Error errorMessage={this.props.error} />
             }
         </>

@@ -2,17 +2,10 @@
     width: 100%;
     height: 699px;
     position: relative;
-    top: -2vh;
+    
     background-image: url('../../../Images/pexels-gaetan-thurin-3163927.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
 
-.img{
-    width: 100%;
-    height: 659px;
-    position: relative;
-    top: -4vh;
-    z-index: -1;
-}

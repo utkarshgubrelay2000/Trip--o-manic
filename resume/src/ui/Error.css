@@ -3,6 +3,7 @@
     .main {
         position: absolute;
         left: 31%;
+        top: 48%;
     }
 
     .dragon {
@@ -273,7 +274,8 @@
     .Error{
         font-family: cursive;
         position: absolute;
-        top: 25%;
-        font-size: 70%;
+        top: 15%;
+        font-size: 5vh;
         left: 31%;
+        color: white;
     }

@@ -1,30 +1,35 @@
 *{
-    margin:'0';
+    margin:0;
     padding: 0;
 }
 .imageDiv{
     background: url('../../../Images/contactus.jpg');
    
-    background-size: 100% 45vh;
+  background-size: contain;
     background-attachment: fixed;
+    
     width: 100%;
-height: 45vh;
+height: 35vh;
 }
 .lets{
-    font-size: 12vw;
+    font-size: 6vh;
     z-index: 1;
     position: relative;
-    top: 35%;
+    top: 45%;
     font: bolder;
     font-family: monospace;
     opacity: .55;
     color: black;
+    padding: 0vh;
+    margin: auto;
+    left: 20%;
 }
 .trans{
-    text-align: center;
+   
     width: 100%;
-    height: 45vh;
-    background-color: rgba(26, 110, 188, 0.34);
+    height: 35vh;
+    background-color: rgba(118, 116, 127, 0.2);
+    
     position: absolute;
     top: 0vh;
 }
@@ -32,7 +37,23 @@ height: 45vh;
 @media(min-width:750px){
     .lets{
 
-        font-size: 8vw;
+        font-size: 6vh;
         font: bolder;
     }
+    
+}
+@media(min-width:1050px){
+   .imageDiv{
+       height: 40vh;
+       background-size: cover;
+   }
+   .trans{
+       height: 40vh;
+   }
+   .lets{
+       font-size: 10vh;
+       left: 35%;
+       top: 30%;
+   }
+    
 }

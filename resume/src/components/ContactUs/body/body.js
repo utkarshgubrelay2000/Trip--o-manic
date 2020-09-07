@@ -13,7 +13,7 @@ const Body=()=>{
         value:'',
         
     },
-    {placeholder:'Phone no.',type:'number',className:'input2',rules:{
+    {placeholder:'Phone no.',type:'number',className:'input',rules:{
         required:true,
         submitable:false,
         length:8
@@ -21,7 +21,7 @@ const Body=()=>{
     value:'',
     
 },
-{placeholder:'Email',type:'text',className:'input3',rules:{
+{placeholder:'Email',type:'text',className:'input',rules:{
     required:true,
     submitable:false,
     length:0,
@@ -83,7 +83,7 @@ const emailValidator=(e,i)=>{
    // console.log(regEx.exec(s));
  
        if(!regEx.exec(s)){
-        console.log(regEx.exec(s),'inside');
+       // console.log(regEx.exec(s),'inside');
         seterror(" Email is invalid ")
         PseudoInput[2].rules.submitable=false;
     } 
@@ -108,8 +108,7 @@ const data=[
     Phone:InputItems[1].value,
     Email:InputItems[2].value},
 ]
-console.log(data);
-console.log('entered');
+
 
 axios.post('https://trip-o-manic.firebaseio.com/contact-us.json',data).then(r=>{
     console.log(r);
@@ -148,8 +147,8 @@ axios.post('https://trip-o-manic.firebaseio.com/contact-us.json',data).then(r=>{
             </span>
   
         </span>
-    <button type="submit" className='button'onClick={SubmitDetails} disabled={buttonsubmission} > Submit </button>
     </form>
+    <button type="submit" className='button'onClick={SubmitDetails} disabled={buttonsubmission} > Submit </button>
  </div>
 </div>
         </div>

@@ -10,9 +10,7 @@ class    Layout  extends Component{
     }
 
  render(){
-    // let token =localStorage.getItem('token')
-  //   let user =localStorage.getItem('user')
-    
+  
      return(
          <div>
 
