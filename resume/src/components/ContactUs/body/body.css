@@ -1,24 +1,27 @@
 *{
     margin:0;
-
+    
     padding: 0;
 }
 .inputDiv{
     border: black 9px solid;
+
+    background-color: rgb(196,196,196);
     width: 77%;
     height: 70vh;
     padding: 12px;
     margin: auto;
     text-align: center;
     position: relative;
-    top: 6vh;
+    margin-top: 6vh;
     
-
+    font-family: 'Agency FB', cursive;
+    
 }
 .kindly{
     position: relative;
     left: 20%;
-   
+    
     font-size: 3vw;
 }
 .button{
@@ -27,8 +30,10 @@
     width: 52%;
     height: 7vh;
     border: black solid 3px;
+    background-color: rgb(118,116,127);
+    color: darkgray;
     
-    font-family: monospace;
+  
     font-size: 2.5vh;
     
 
@@ -37,13 +42,15 @@
 label {
   
         font-weight: 900;
-        font-family: 'Gill Sans';
-        margin: 0;
+    
         display: flow-root;
         padding: 0;
         font-size: 150%;
     }
-
+.bodydiv{
+     background:radial-gradient(rgb(60, 57, 75),rgb(0,0,0));
+     height: 100%;
+}
 .divisioncontact{
     position: relative;
     padding: 1vh;
@@ -57,8 +64,8 @@ label {
     position: relative;
     width: 80%;
     height: 5vh;
-      background-color: rgba(118, 116, 127, 0.6);
-
+    background-color: rgb(118,116,127);
+    
 }
 span{
     font-size: 132%;
@@ -93,11 +100,18 @@ span{
     }
    
 }
+.h5{
+    font-size: 2vh;
+ font-family:"agency fb";
+ color: white;
+}
 @media (min-width:1020px){
     .inputDiv{
         width: 60%;
         height: 55vw;
     }
-  
+  .h5{
+      font-size: 5vh;
+  }
     
 }

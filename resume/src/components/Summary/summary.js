@@ -35,6 +35,7 @@ if(r.data[key].User===currentUser){
 }
             }
             setTripSum(tripSumaary)
+           console.log(tripSumaary);
            
         
         }).catch(err=>{
@@ -51,13 +52,13 @@ if(r.data[key].User===currentUser){
        <div className='upperDiv'  >
 <h3  className='H1'> History</h3>
        </div>
-</div>
-    { tripsum? tripsum.map(i=>{
+</div> 
+    { tripsum[0]? tripsum.map(i=>{
         return (
             <SumBox BookingDate={i.Bookingdate} Place={i.Place} Persons={i.Person} Days={i.days} Date={i.Date} key={i.id}/>
             )
         })
-    :null}
+    : <h1 className='bookingNotFound'> Booking Not found its seem like you didn't have booked any trip</h1>}
       <div className='bottomDiv'>
 <div className='back'>
    <NavLink to='/' style={{

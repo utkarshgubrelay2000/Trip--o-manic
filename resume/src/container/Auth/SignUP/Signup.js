@@ -33,8 +33,11 @@ class Signup extends Component {
     render() {
         const customToken = localStorage.getItem('token')
         return (<>
-            {customToken ? <Redirect to='/' /> : !this.props.error ?
+            {customToken ? <Redirect to='/' /> : 
                 <div className="middleDiv">
+                    <h6>
+                        {this.props.error}
+                    </h6>
                     {this.props.loading ? <Spinner /> :
                         <div>
                             {this.state.SignUp.input.map((items, i) => {
@@ -57,7 +60,7 @@ class Signup extends Component {
                           <button className='Authhandler' onClick={this.props.renderHandler} >
                             Login
             </button>
-                </div> : <Error errorMessage={this.props.error} />
+                </div> 
             }
         </>
 

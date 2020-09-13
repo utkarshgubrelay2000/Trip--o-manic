@@ -13,16 +13,16 @@
 .back{
     position: relative;
     background: #5D66B9;
-    height: 4vh;
+    height: 8vh;
     text-align: center;
     float: inline-end;
     width: 24%;
-    left: 24%;
-    margin: 8%;
-    font-family:Showcard Gothic ;
+    left: 34%;
+  
+    font-family: 'Kaushan Script', cursive;
 text-decoration: none;
 color: white;
-padding: 4%;
+top: 10vh;
 font-size: 4vh
 ;
 }
@@ -39,6 +39,12 @@ height: 1vh;
    color: white;
 padding: 3%;
 top: 22vh;
+}
+.bookingNotFound{
+text-align: center;font-family: 'agency fb', cursive;
+margin: 10vh;
+
+
 }
 .innerDiv{
     font-family: monospace;
@@ -77,11 +83,9 @@ span{
     .H1{
         padding: 0;
         font-size: 15vw;
-        
+       
     }
-  .back{
-      height: 3vh;
-  }
+  
  
   .box{
     width: 40%;
