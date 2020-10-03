@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Input from '../../../ui/input'
-import Error from '../../../ui/Error'
+//import Error from '../../../ui/Error'
 import Spinner from '../../../ui/spinner'
 import '../Auth.css'
 import { Redirect } from 'react-router-dom'

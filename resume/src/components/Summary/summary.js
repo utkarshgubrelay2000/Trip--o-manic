@@ -42,7 +42,7 @@ if(r.data[key].User===currentUser){
           //  console.log(err);
             setError(err.message)
         })
-    },[])
+    },[currentUser])
    
    let divSummary;
    if(!loading){
