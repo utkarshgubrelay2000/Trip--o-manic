@@ -1,0 +1,2 @@
+(this.webpackJsonpresume=this.webpackJsonpresume||[]).push([[12],{115:function(e,t,a){"use strict";a.r(t);var r=a(0),n=a.n(r),o=a(3);t.default=function(){return localStorage.removeItem("token"),localStorage.removeItem("user"),n.a.createElement(n.a.Fragment,null,n.a.createElement(o.a,{to:"/"}))}}}]);
+//# sourceMappingURL=12.e14d6c56.chunk.js.map
