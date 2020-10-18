@@ -18,9 +18,10 @@ const store=createStore(combi,composeEnhancers(applyMiddleware(thunk)))
 
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename='/'>
   <Provider store={store}>
  <App />
+ 
   </Provider>
   </BrowserRouter>,
   document.getElementById('root')
