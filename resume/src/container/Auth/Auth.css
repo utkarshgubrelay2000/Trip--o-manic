@@ -23,15 +23,16 @@ margin-top: 2vh;
     font-size: 8vh;
     color: darkgray;
     padding: 4vh;
-    /* box-shadow: 24px 38px black; */
-    text-shadow: 28px 24px black;
+   
     opacity: .4;
 }
 .inputType{
     width: 27vh;
-    height: 3vh;
-    background-color: rgb(118,116,127)    ;
+    height: 4vh;
+    background-color: rgb(118,116,127);
     color: white;
+    border-radius: 12px;
+    border: 1px solid grey;
 }
 .ButtonLogin{
     background-color:rgb(82,80,94);
@@ -58,6 +59,11 @@ margin-top: 2vh;
     padding: 4vh;
     left: 0;
 }
+.label_Signup{
+    font-family: 'poppins',sans-serif;
+    font-weight: 500;
+    color: darkslategrey;
+}
 .Authhandler{
     height: 5vh;
     padding: 0vh;
@@ -73,11 +79,17 @@ margin-top: 2vh;
 }
 @media (min-width:700px){
     .inputType{
-        width: 30vh;
+        width: 43vh;
+        border-radius: 2px;
     }
     .signUpdiv{
         text-align: center;
     }
+}
+@media (max-width:700px){
+   .middleDiv{
+       border-radius: 10px;
+   }
 }
 @media (min-width:1200px){
     .inputType{

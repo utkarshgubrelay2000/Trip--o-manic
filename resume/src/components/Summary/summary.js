@@ -4,7 +4,7 @@ import './summaryBox/summary.css'
 import Spinner from '../../ui/spinner'
 import Errorr from '../../ui/Error'
 import axios from 'axios'
-import { NavLink } from 'react-router-dom'
+import { NavLink  } from 'react-router-dom'
 
 const SumBox=React.lazy(()=>import ('./summaryBox/summarybox'))
 
@@ -47,7 +47,7 @@ if(r.data[key].User===currentUser){
    let divSummary;
    if(!loading){
        divSummary= 
-<div className='outerDiv'>
+<div className='outerDiv container'>
        <div >
        <div className='upperDiv'  >
 <h3  className='H1'> History</h3>
@@ -83,8 +83,7 @@ if(r.data[key].User===currentUser){
    }
    if(Error){
        divSummary=<div style={{
-           textAlign:"center",
-           
+           textAlign:"center",   
         }}>
           
         
@@ -95,7 +94,9 @@ if(r.data[key].User===currentUser){
        </div>
    }
    return(<div>
+     
       {divSummary}
+
        </div>
      
    ) 

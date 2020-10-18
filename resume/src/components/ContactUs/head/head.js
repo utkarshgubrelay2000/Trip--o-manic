@@ -3,8 +3,7 @@ import './head.css'
 
 const Head=()=>{
 
-   
-    return( <>  <div className='imageDiv'>
+return( <>  <div className='imageDiv'>
  </div>
 <div className="trans">
 

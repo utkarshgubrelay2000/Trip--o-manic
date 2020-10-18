@@ -8,7 +8,7 @@
 
     background-color: rgb(196,196,196);
     width: 77%;
-    height: 70vh;
+   
     padding: 12px;
     margin: auto;
     text-align: center;
@@ -25,20 +25,18 @@
     font-size: 3vw;
 }
 .button{
-    position: relative;
-    top: 5vw;
+    position: relative;  
     width: 52%;
     height: 7vh;
-    border: black solid 3px;
     background-color: rgb(118,116,127);
-    color: darkgray;
-    
-  
+    color: rgb(60, 57, 75);
     font-size: 2.5vh;
-    
-
 }
-
+.button:hover{
+    background-color:transparent;
+    color: rgb(118,116,127);
+    border: rgb(60, 57, 75) 3px solid;
+}
 label {
   
         font-weight: 900;
@@ -50,12 +48,14 @@ label {
 .bodydiv{
      background:radial-gradient(rgb(60, 57, 75),rgb(0,0,0));
      height: 100%;
+     margin-top: -6vh;
 }
 .divisioncontact{
     position: relative;
     padding: 1vh;
     margin: 2vh;
-    box-shadow: 1vh 1vh 1vh -1vw grey;
+    box-shadow: 2px 6px 10px -1vw grey;
+
 }
 
 
@@ -84,7 +84,7 @@ span{
 @media (min-width:700px){
     .inputDiv{
         width: 70%;
-        height: 85vh;
+       
     }
     
     .input{
@@ -96,8 +96,9 @@ span{
         
     }
     .divisioncontact{
-        box-shadow: 3vh 3vh 2vh -1vw grey;
+        box-shadow: 2px 6px 10px -1vw grey;
     }
+    
    
 }
 .h5{
@@ -108,7 +109,7 @@ span{
 @media (min-width:1020px){
     .inputDiv{
         width: 60%;
-        height: 55vw;
+      
     }
   .h5{
       font-size: 5vh;

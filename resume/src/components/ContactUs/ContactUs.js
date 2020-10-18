@@ -8,8 +8,10 @@ class Contact extends Component{
     render(){
         return (
             <React.Fragment>
-<Head/>
-<Body/>
+                <section>
+                  <Head/>
+                  <Body/>
+                </section>
 
             </React.Fragment> 
             

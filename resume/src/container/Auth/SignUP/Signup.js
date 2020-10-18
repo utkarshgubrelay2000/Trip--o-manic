@@ -42,9 +42,9 @@ class Signup extends Component {
                         <div>
                             {this.state.SignUp.input.map((items, i) => {
                                 return (<div key={items.placeholder} className='signUpdiv'>
-                                    <label >
+                                    <label  className="label_Signup" >
                                         {items.placeholder}
-                                    </label>
+                                    </label  >
                                     <Input type={items.type} required placeholder={items.placeholder} className={items.className} onChange={(e) => this.ChangeHandler(e, i)} />
                                 </div>
                                 )

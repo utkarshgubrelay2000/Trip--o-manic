@@ -42,7 +42,7 @@ class Login extends Component {
                         <div>
                             {this.state.Login.map((items, i) => {
                                 return (
-                                    <div key={items.placeholder} className='signUpdiv' > <label >
+                                    <div key={items.placeholder} className='signUpdiv' > <label  className="label_Signup">
                                         {items.placeholder}
                                     </label>
                                         <Input onChange={(e) => this.ChangeHandler(e, i)} className={items.className} required type={items.type} placeholder={items.placeholder} />

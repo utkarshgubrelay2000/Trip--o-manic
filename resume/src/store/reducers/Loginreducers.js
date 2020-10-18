@@ -7,8 +7,6 @@ token:null,
       error:false
 }
 export  const user=(email,password)=>{
- 
-              
     return dispatch=>{
                dispatch(user_request)            
                firebase.auth().signInWithEmailAndPassword(email,password).then(u=>{
